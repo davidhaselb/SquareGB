@@ -10,7 +10,7 @@ AND
 Ian Hattwick, Preston Beebe and Zachary Hale for euclidean sequencer description:
 https://www.computermusicdesign.com/simplest-euclidean-rhythm-algorithm-explained/
 AND 
-BlueMoon968 for rand()-function
+BlueMoon968 for rand()-function:
 https://github.com/BlueMoon968/gbdk_rand
 */
 
