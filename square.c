@@ -100,19 +100,15 @@ UINT8 drumA[32] = {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 UINT8 drumB[32] = {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
 UINT8 drumC[32] = {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
 
-UINT8 patternA[18] = {1,16,2,16,4,16,0,0,0,0,0,0,0,0,0,1,1,1};
-UINT8 patternB[18] = {1,16,2,16,4,16,0,0,0,0,0,0,0,0,0,1,1,1};
-UINT8 patternC[18] = {1,16,2,16,4,16,0,0,0,0,0,0,0,0,0,1,1,1};
-UINT8 patternD[18] = {1,16,2,16,4,16,0,0,0,0,0,0,0,0,0,1,1,1};
-//numberOfPulsesA, totalStepsA, numberOfPulsesB, totalStepsB, numberOfPulsesC,totalStepsC, offStepA, offStepB, offStepC, randA,randB, randC, xA, xB, xC, delayA, delayB, delayC
-
-
-
 UINT8 dXlut[32] = {144,140,136,132,128,124,120,116,112,108,104,100,96,92,88,84,80,76,72,68,64,60,56,52,48,44,40,36,32,28,24,20};
 UINT8 dYlut[32] = {16,20,24,28,32,36,40,44,48,52,56,60,64,68,72,76,80,84,88,92,96,100,104,108,112,116,120,124,128,132,136,140};
 UINT8 savelut[4] = {144, 128, 112, 96};
 
 UINT8 bucket, i, y, randA, randB, randC, first, last, f, x, xA, xB, xC, delayA, delayB, delayC, g, syncToDrum, clockToSync, numberOfPulsesA, totalStepsA, clkA, numberOfPulsesB, totalStepsB, clkB, numberOfPulsesC, totalStepsC, clkC, offStepA, offStepB, offStepC, cDelay, cOffStep, currentSaveSlot;
+UINT8 storeAPA, storeASA, storeAPB, storeASB, storeAPC, storeASC, storeAOA, storeAOB, storeAOC, storeADA, storeADB, storeADC;
+UINT8 storeBPA, storeBSA, storeBPB, storeBSB, storeBPC, storeBSC, storeBOA, storeBOB, storeBOC, storeBDA, storeBDB, storeBDC;
+UINT8 storeCPA, storeCSA, storeCPB, storeCSB, storeCPC, storeCSC, storeCOA, storeCOB, storeCOC, storeCDA, storeCDB, storeCDC;
+UINT8 storeDPA, storeDSA, storeDPB, storeDSB, storeDPC, storeDSC, storeDOA, storeDOB, storeDOC, storeDDA, storeDDB, storeDDC;
 static UINT8 current_rand;
 unsigned char samp_freq, tempo, watch, bob, todd, pop, modus, padext, joy, pad, seldrum;
 
@@ -829,34 +825,26 @@ void tim()
 	player();
 }
 
-void loadPattern(UINT8 pattern[18])
+
+
+loadA()
 {
-    //disable_interrupts();
-   	numberOfPulsesA = pattern[0];
-	totalStepsA = pattern[1];
-	numberOfPulsesB = pattern[2];
-	totalStepsB = pattern[3];
-	numberOfPulsesC = pattern[4];
-	totalStepsC = pattern[5];
-	offStepA = pattern[6];
-	offStepB = pattern[7];
-	offStepC = pattern[8];
-	randA = pattern[9];
-	randB = pattern[10];
-	randC = pattern[11];
-	xA = pattern[12];
-	xB = pattern[13];
-	xC = pattern[14];
-	delayA = pattern[15];
-	delayB = pattern[16];
-	delayC = pattern[17];
-    //enable_interrupts();
+   	numberOfPulsesA = storeAPA;
+	totalStepsA = storeASA;
+	numberOfPulsesB = storeAPB;
+	totalStepsB = storeASB;
+	numberOfPulsesC = storeAPC;
+	totalStepsC = storeASC;
+	offStepA = storeAOA;
+	offStepB = storeAOB;
+	offStepC = storeAOC;
+	delayA = storeADA;
+	delayB = storeADB;
+	delayC = storeADC;
     set_sprite_tile(0, 0);
     move_sprite(0, dYlut[numberOfPulsesA-1], dXlut[totalStepsA-1]); //16, 144
-	
     set_sprite_tile(1, 2);
     move_sprite(1, dYlut[numberOfPulsesB-1], dXlut[totalStepsB-1]); //16, 144
-	
     set_sprite_tile(2, 4);
     move_sprite(2, dYlut[numberOfPulsesC-1], dXlut[totalStepsC-1]); //16, 144
 	disable_interrupts();
@@ -870,90 +858,161 @@ void loadPattern(UINT8 pattern[18])
 	wait_vbl_done();
 }
 
+loadB()
+{
+   	numberOfPulsesA = storeBPA;
+	totalStepsA = storeBSA;
+	numberOfPulsesB = storeBPB;
+	totalStepsB = storeBSB;
+	numberOfPulsesC = storeBPC;
+	totalStepsC = storeBSC;
+	offStepA = storeBOA;
+	offStepB = storeBOB;
+	offStepC = storeBOC;
+	delayA = storeBDA;
+	delayB = storeBDB;
+	delayC = storeBDC;
+    set_sprite_tile(0, 0);
+    move_sprite(0, dYlut[numberOfPulsesA-1], dXlut[totalStepsA-1]); //16, 144
+    set_sprite_tile(1, 2);
+    move_sprite(1, dYlut[numberOfPulsesB-1], dXlut[totalStepsB-1]); //16, 144
+    set_sprite_tile(2, 4);
+    move_sprite(2, dYlut[numberOfPulsesC-1], dXlut[totalStepsC-1]); //16, 144
+	disable_interrupts();
+	fillDrumA();
+	fillDrumB();
+	fillDrumC();
+   	clkA = 0;
+   	clkB = 0;
+   	clkC = 0;
+	enable_interrupts();
+	wait_vbl_done();
+}
+
+loadC()
+{
+   	numberOfPulsesA = storeCPA;
+	totalStepsA = storeCSA;
+	numberOfPulsesB = storeCPB;
+	totalStepsB = storeCSB;
+	numberOfPulsesC = storeCPC;
+	totalStepsC = storeCSC;
+	offStepA = storeCOA;
+	offStepB = storeCOB;
+	offStepC = storeCOC;
+	delayA = storeCDA;
+	delayB = storeCDB;
+	delayC = storeCDC;
+    set_sprite_tile(0, 0);
+    move_sprite(0, dYlut[numberOfPulsesA-1], dXlut[totalStepsA-1]); //16, 144
+    set_sprite_tile(1, 2);
+    move_sprite(1, dYlut[numberOfPulsesB-1], dXlut[totalStepsB-1]); //16, 144
+    set_sprite_tile(2, 4);
+    move_sprite(2, dYlut[numberOfPulsesC-1], dXlut[totalStepsC-1]); //16, 144
+	disable_interrupts();
+	fillDrumA();
+	fillDrumB();
+	fillDrumC();
+   	clkA = 0;
+   	clkB = 0;
+   	clkC = 0;
+	enable_interrupts();
+	wait_vbl_done();
+}
+
+loadD()
+{
+   	numberOfPulsesA = storeDPA;
+	totalStepsA = storeBSA;
+	numberOfPulsesB = storeDPB;
+	totalStepsB = storeBSB;
+	numberOfPulsesC = storeDPC;
+	totalStepsC = storeDSC;
+	offStepA = storeDOA;
+	offStepB = storeDOB;
+	offStepC = storeDOC;
+	delayA = storeDDA;
+	delayB = storeDDB;
+	delayC = storeDDC;
+    set_sprite_tile(0, 0);
+    move_sprite(0, dYlut[numberOfPulsesA-1], dXlut[totalStepsA-1]); //16, 144
+    set_sprite_tile(1, 2);
+    move_sprite(1, dYlut[numberOfPulsesB-1], dXlut[totalStepsB-1]); //16, 144
+    set_sprite_tile(2, 4);
+    move_sprite(2, dYlut[numberOfPulsesC-1], dXlut[totalStepsC-1]); //16, 144
+	disable_interrupts();
+	fillDrumA();
+	fillDrumB();
+	fillDrumC();
+   	clkA = 0;
+   	clkB = 0;
+   	clkC = 0;
+	enable_interrupts();
+	wait_vbl_done();
+}
+
+
 void savePattern()
 {
+	//printf("\n NEW \n");
 	switch(currentSaveSlot)
 	{
 		case 0:
-		   	patternA[0] = numberOfPulsesA;
-			patternA[1] = totalStepsA;
-			patternA[2] = numberOfPulsesB;
-			patternA[3] = totalStepsB;
-			patternA[4] = numberOfPulsesC;
-			patternA[5] = totalStepsC;
-			patternA[6] = offStepA;
-			patternA[7] = offStepB;
-			patternA[8] = offStepC;
-			patternA[9] = randA;
-			patternA[10] = randB;
-			patternA[11] = randC;
-			patternA[12] = xA;
-			patternA[13] = xB;
-			patternA[14] = xC;
-			patternA[15] = delayA;
-			patternA[16] = delayB;
-			patternA[17] = delayC;
+		   	storeAPA = numberOfPulsesA;
+			storeASA = totalStepsA;
+		   	storeAPB = numberOfPulsesB;
+			storeASB = totalStepsB;
+		   	storeAPC = numberOfPulsesC;
+			storeASC = totalStepsC;
+			storeAOA = offStepA;
+			storeAOB = offStepB;
+			storeAOC = offStepC;
+			storeADA = delayA;
+			storeADB = delayB;
+			storeADC = delayC;
 			break;
 		case 1:
-		   	patternB[0] = numberOfPulsesA;
-			patternB[1] = totalStepsA;
-			patternB[2] = numberOfPulsesB;
-			patternB[3] = totalStepsB;
-			patternB[4] = numberOfPulsesC;
-			patternB[5] = totalStepsC;
-			patternB[6] = offStepA;
-			patternB[7] = offStepB;
-			patternB[8] = offStepC;
-			patternB[9] = randA;
-			patternB[10] = randB;
-			patternB[11] = randC;
-			patternB[12] = xA;
-			patternB[13] = xB;
-			patternB[14] = xC;
-			patternB[15] = delayA;
-			patternB[16] = delayB;
-			patternB[17] = delayC;
+		   	storeBPA = numberOfPulsesA;
+			storeBSA = totalStepsA;
+		   	storeBPB = numberOfPulsesB;
+			storeBSB = totalStepsB;
+		   	storeBPC = numberOfPulsesC;
+			storeBSC = totalStepsC;
+			storeBOA = offStepA;
+			storeBOB = offStepB;
+			storeBOC = offStepC;
+			storeBDA = delayA;
+			storeBDB = delayB;
+			storeBDC = delayC;
 			break;
-		
+			
 		case 2:
-		   	patternC[0] = numberOfPulsesA;
-			patternC[1] = totalStepsA;
-			patternC[2] = numberOfPulsesB;
-			patternC[3] = totalStepsB;
-			patternC[4] = numberOfPulsesC;
-			patternC[5] = totalStepsC;
-			patternC[6] = offStepA;
-			patternC[7] = offStepB;
-			patternC[8] = offStepC;
-			patternC[9] = randA;
-			patternC[10] = randB;
-			patternC[11] = randC;
-			patternC[12] = xA;
-			patternC[13] = xB;
-			patternC[14] = xC;
-			patternC[15] = delayA;
-			patternC[16] = delayB;
-			patternC[17] = delayC;
+		   	storeCPA = numberOfPulsesA;
+			storeCSA = totalStepsA;
+		   	storeCPB = numberOfPulsesB;
+			storeCSB = totalStepsB;
+		   	storeCPC = numberOfPulsesC;
+			storeCSC = totalStepsC;
+			storeCOA = offStepA;
+			storeCOB = offStepB;
+			storeCOC = offStepC;
+			storeCDA = delayA;
+			storeCDB = delayB;
+			storeCDC = delayC;
 			break;
 		case 3:
-		   	patternD[0] = numberOfPulsesA;
-			patternD[1] = totalStepsA;
-			patternD[2] = numberOfPulsesB;
-			patternD[3] = totalStepsB;
-			patternD[4] = numberOfPulsesC;
-			patternD[5] = totalStepsC;
-			patternD[6] = offStepA;
-			patternD[7] = offStepB;
-			patternD[8] = offStepC;
-			patternD[9] = randA;
-			patternD[10] = randB;
-			patternD[11] = randC;
-			patternD[12] = xA;
-			patternD[13] = xB;
-			patternD[14] = xC;
-			patternD[15] = delayA;
-			patternD[16] = delayB;
-			patternD[17] = delayC;
+		   	storeDPA = numberOfPulsesA;
+			storeDSA = totalStepsA;
+		   	storeDPB = numberOfPulsesB;
+			storeDSB = totalStepsB;
+		   	storeDPC = numberOfPulsesC;
+			storeDSC = totalStepsC;
+			storeDOA = offStepA;
+			storeDOB = offStepB;
+			storeDOC = offStepC;
+			storeDDA = delayA;
+			storeDDB = delayB;
+			storeDDC = delayC;
 			break;
 	}
 	performantdelay(1);
@@ -969,17 +1028,33 @@ void main()
 	watch = 0;
 	clkA = 0;
 	pop = 0;
+	randA = 0;
+	randB = 0;
+	randC = 0;
+	xA = 0;
+	xB = 0; 
+	xC = 0;
 	modus = MASTER;
     samp_freq = 164; //16384/164 ~ 100 
     tempo = 20; //100/10 = 10
 	seldrum = DRUMA;
 	syncToDrum = 0;
 	currentSaveSlot = 0;
-	
-	loadPattern(patternA);
-	//fillDrumA();
-	//fillDrumB();
-	//fillDrumC();
+   	numberOfPulsesA = 1;
+	totalStepsA = 16;
+	numberOfPulsesB = 2;
+	totalStepsB = 16;
+	numberOfPulsesC = 4;
+	totalStepsC = 16;
+	offStepA = 0;
+	offStepB = 0;
+	offStepC = 0;
+	delayA = 1;
+	delayB = 1;
+	delayC = 1;
+	fillDrumA();
+	fillDrumB();
+	fillDrumC();
 	
 	SPRITES_8x8;
     set_sprite_data(0, 2, squareA);
@@ -1227,20 +1302,21 @@ void main()
 		
 		if ( padext == J_BLEFT)
 		{
+			//printf("Slot %d", currentSaveSlot);
 			switch(currentSaveSlot)
 			{
 				case 0:
-					loadPattern(patternA);
+					loadA();
 					break;
 				case 1:
-					loadPattern(patternB);
+					loadB();
 					break;
 				
 				case 2:
-					loadPattern(patternC);
+					loadC();
 					break;
 				case 3:
-					loadPattern(patternD);
+					loadD();
 					break;
 			}
 			performantdelay(5);
