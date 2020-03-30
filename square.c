@@ -5,6 +5,9 @@ written by
 
 This code is not optimized. It is for study and experimentational use only. 
 
+Written with GBDK: 
+http://gbdk.sourceforge.net
+
 WITH SPECIAL THANKS TO:
 Oliver Wittchow and Julian Rohrhuber for nanovoice sourcecode:
 https://swiki.hfbk-hamburg.de/MusicTechnology/uploads/132/nanovoice.c
