@@ -368,7 +368,7 @@ MODULES
 	FILE /opt/gbdk/lib/small/asxxxx/gb/crt0.o
 		NAME Runtime
 	FILE square.o
-		NAME lcc709570
+		NAME lcc717490
 LIBRARIES
 	LIBRARY /opt/gbdk/lib/small/asxxxx/gbz80/gbz80.lib
 		MODULE crt0_rle.o
