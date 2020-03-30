@@ -47,7 +47,7 @@ https://github.com/BlueMoon968/gbdk_rand
 static UINT8 current_rand;
 
 
-unsigned char samp_freq, tempo, watch, bob, todd, pop, modus, paddel, joy, pad, seldrum;
+unsigned char samp_freq, tempo, watch, bob, todd, pop, modus, padext, joy, pad, seldrum;
 
 UINT8 bucket, i, y, randA, randB, randC, first, last, f, x, xA, xB, xC, delayA, delayB, delayC, g, syncToDrum, clockToSync, numberOfPulsesA, totalStepsA, clkA, numberOfPulsesB, totalStepsB, clkB, numberOfPulsesC, totalStepsC, clkC, offStepA, offStepB, offStepC;
 UINT8 drumA[32] = {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
@@ -771,10 +771,10 @@ void main()
 	   }
 
        if ( joypad() != joy || pad > 10  )
-            paddel = joypad();
+            padext = joypad();
        else
 	   {
-		   paddel = 0;
+		   padext = 0;
 	   }
            
 	   
@@ -836,55 +836,55 @@ void main()
 			updateUI();
         }
 		
-		if ( paddel == J_BRIGHT)
+		if ( padext == J_BRIGHT)
 		{
 			increaseSteps();
 			delay(200);
 		}
 		
-		if ( paddel == J_BLEFT)
+		if ( padext == J_BLEFT)
 		{
 			decreaseSteps();
 			delay(200);
 		}
 		
-		if ( paddel == J_BUP)
+		if ( padext == J_BUP)
 		{
 			increasePulses();
 			delay(200);
 		}
 		
-		if ( paddel == J_BDOWN)
+		if ( padext == J_BDOWN)
 		{
 			decreasePulses();
 			delay(200);
 		}
 		
-		if ( paddel == J_AUP)
+		if ( padext == J_AUP)
 		{
 			increaseOffStep();
 			delay(200);
 		}
 		
-		if ( paddel == J_ADOWN)
+		if ( padext == J_ADOWN)
 		{
 			decreaseOffStep();
 			delay(200);
 		}
 		
-		if ( paddel == J_ARIGHT)
+		if ( padext == J_ARIGHT)
 		{
 			increaseSwing();
 			delay(50);
 		}
 		
-		if ( paddel == J_ALEFT)
+		if ( padext == J_ALEFT)
 		{
 			decreaseSwing();
 			delay(50);
 		}
 		
-		if( paddel == J_AB)
+		if( padext == J_AB)
 		{
 			syncToDrum = 1;
 			//printf("Sync On");

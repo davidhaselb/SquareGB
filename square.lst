@@ -1,9 +1,9 @@
                               1 ;--------------------------------------------------------
                               2 ; File Created by SDCC : FreeWare ANSI-C Compiler
-                              3 ; Version 2.3.1 Mon Mar 30 10:47:36 2020
+                              3 ; Version 2.3.1 Mon Mar 30 10:48:29 2020
                               4 
                               5 ;--------------------------------------------------------
-                              6 	.module lcc554390
+                              6 	.module lcc555150
                               7 	
                               8 ;--------------------------------------------------------
                               9 ; Public variables in this module
@@ -69,7 +69,7 @@
                              69 	.globl _seldrum
                              70 	.globl _pad
                              71 	.globl _joy
-                             72 	.globl _paddel
+                             72 	.globl _padext
                              73 	.globl _modus
                              74 	.globl _pop
                              75 	.globl _todd
@@ -103,7 +103,7 @@
    0006                     103 	.ds 1
    0007                     104 _modus::
    0007                     105 	.ds 1
-   0008                     106 _paddel::
+   0008                     106 _padext::
    0008                     107 	.ds 1
    0009                     108 _joy::
    0009                     109 	.ds 1
@@ -4785,8 +4785,8 @@
                            4770 ;	genCall
                            4771 ; _saveRegsForCall: sendSetSize: 0 deInUse: 0 bcInUse: 0 deSending: 0
    0FD2 CD 00 00           4772 	call	_joypad
-                           4773 ;	AOP_HL for _paddel
-   0FD5 21 08 00           4774 	ld	hl,#_paddel
+                           4773 ;	AOP_HL for _padext
+   0FD5 21 08 00           4774 	ld	hl,#_padext
    0FD8 73                 4775 	ld	(hl),e
                            4776 ;	genGoto
    0FD9 C3 E1 0F           4777 	jp	00106$
@@ -4794,8 +4794,8 @@
    0FDC                    4779 00105$:
                            4780 ;	square.c 777
                            4781 ;	genAssign
-                           4782 ;	AOP_HL for _paddel
-   0FDC 21 08 00           4783 	ld	hl,#_paddel
+                           4782 ;	AOP_HL for _padext
+   0FDC 21 08 00           4783 	ld	hl,#_padext
    0FDF 36 00              4784 	ld	(hl),#0x00
                            4785 ;	genLabel
    0FE1                    4786 00106$:
@@ -5034,9 +5034,9 @@
    10B5                    5019 00123$:
                            5020 ;	square.c 839
                            5021 ;	genCmpEq
-                           5022 ;	AOP_HL for _paddel
+                           5022 ;	AOP_HL for _padext
                            5023 ; genCmpEq: left 1, right 1, result 0
-   10B5 21 08 00           5024 	ld	hl,#_paddel
+   10B5 21 08 00           5024 	ld	hl,#_padext
    10B8 7E                 5025 	ld	a,(hl)
    10B9 FE 21              5026 	cp	a,#0x21
    10BB C2 CF 10           5027 	jp	nz,00126$
@@ -5060,9 +5060,9 @@
    10CF                    5045 00126$:
                            5046 ;	square.c 845
                            5047 ;	genCmpEq
-                           5048 ;	AOP_HL for _paddel
+                           5048 ;	AOP_HL for _padext
                            5049 ; genCmpEq: left 1, right 1, result 0
-   10CF 21 08 00           5050 	ld	hl,#_paddel
+   10CF 21 08 00           5050 	ld	hl,#_padext
    10D2 7E                 5051 	ld	a,(hl)
    10D3 FE 22              5052 	cp	a,#0x22
    10D5 C2 E9 10           5053 	jp	nz,00128$
@@ -5086,9 +5086,9 @@
    10E9                    5071 00128$:
                            5072 ;	square.c 851
                            5073 ;	genCmpEq
-                           5074 ;	AOP_HL for _paddel
+                           5074 ;	AOP_HL for _padext
                            5075 ; genCmpEq: left 1, right 1, result 0
-   10E9 21 08 00           5076 	ld	hl,#_paddel
+   10E9 21 08 00           5076 	ld	hl,#_padext
    10EC 7E                 5077 	ld	a,(hl)
    10ED FE 24              5078 	cp	a,#0x24
    10EF C2 03 11           5079 	jp	nz,00130$
@@ -5112,9 +5112,9 @@
    1103                    5097 00130$:
                            5098 ;	square.c 857
                            5099 ;	genCmpEq
-                           5100 ;	AOP_HL for _paddel
+                           5100 ;	AOP_HL for _padext
                            5101 ; genCmpEq: left 1, right 1, result 0
-   1103 21 08 00           5102 	ld	hl,#_paddel
+   1103 21 08 00           5102 	ld	hl,#_padext
    1106 7E                 5103 	ld	a,(hl)
    1107 FE 28              5104 	cp	a,#0x28
    1109 C2 1D 11           5105 	jp	nz,00132$
@@ -5138,9 +5138,9 @@
    111D                    5123 00132$:
                            5124 ;	square.c 863
                            5125 ;	genCmpEq
-                           5126 ;	AOP_HL for _paddel
+                           5126 ;	AOP_HL for _padext
                            5127 ; genCmpEq: left 1, right 1, result 0
-   111D 21 08 00           5128 	ld	hl,#_paddel
+   111D 21 08 00           5128 	ld	hl,#_padext
    1120 7E                 5129 	ld	a,(hl)
    1121 FE 14              5130 	cp	a,#0x14
    1123 C2 37 11           5131 	jp	nz,00134$
@@ -5164,9 +5164,9 @@
    1137                    5149 00134$:
                            5150 ;	square.c 869
                            5151 ;	genCmpEq
-                           5152 ;	AOP_HL for _paddel
+                           5152 ;	AOP_HL for _padext
                            5153 ; genCmpEq: left 1, right 1, result 0
-   1137 21 08 00           5154 	ld	hl,#_paddel
+   1137 21 08 00           5154 	ld	hl,#_padext
    113A 7E                 5155 	ld	a,(hl)
    113B FE 18              5156 	cp	a,#0x18
    113D C2 51 11           5157 	jp	nz,00136$
@@ -5190,9 +5190,9 @@
    1151                    5175 00136$:
                            5176 ;	square.c 875
                            5177 ;	genCmpEq
-                           5178 ;	AOP_HL for _paddel
+                           5178 ;	AOP_HL for _padext
                            5179 ; genCmpEq: left 1, right 1, result 0
-   1151 21 08 00           5180 	ld	hl,#_paddel
+   1151 21 08 00           5180 	ld	hl,#_padext
    1154 7E                 5181 	ld	a,(hl)
    1155 FE 11              5182 	cp	a,#0x11
    1157 C2 6B 11           5183 	jp	nz,00138$
@@ -5216,9 +5216,9 @@
    116B                    5201 00138$:
                            5202 ;	square.c 881
                            5203 ;	genCmpEq
-                           5204 ;	AOP_HL for _paddel
+                           5204 ;	AOP_HL for _padext
                            5205 ; genCmpEq: left 1, right 1, result 0
-   116B 21 08 00           5206 	ld	hl,#_paddel
+   116B 21 08 00           5206 	ld	hl,#_padext
    116E 7E                 5207 	ld	a,(hl)
    116F FE 12              5208 	cp	a,#0x12
    1171 C2 85 11           5209 	jp	nz,00140$
@@ -5242,9 +5242,9 @@
    1185                    5227 00140$:
                            5228 ;	square.c 887
                            5229 ;	genCmpEq
-                           5230 ;	AOP_HL for _paddel
+                           5230 ;	AOP_HL for _padext
                            5231 ; genCmpEq: left 1, right 1, result 0
-   1185 21 08 00           5232 	ld	hl,#_paddel
+   1185 21 08 00           5232 	ld	hl,#_padext
    1188 7E                 5233 	ld	a,(hl)
    1189 FE 30              5234 	cp	a,#0x30
    118B C2 9E 11           5235 	jp	nz,00142$
@@ -5407,7 +5407,7 @@ Symbol Table
   1 _offStepB                          0029 GR
   1 _offStepC                          002A GR
   1 _pad                               000A GR
-  1 _paddel                            0008 GR
+  1 _padext                            0008 GR
   0 _player                            0EAC GR
   1 _pop                               0006 GR
     _printf                            **** GX

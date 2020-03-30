@@ -268,7 +268,7 @@ AREA _DATA
 		_todd	C0A5
 		_pop	C0A6
 		_modus	C0A7
-		_paddel	C0A8
+		_padext	C0A8
 		_joy	C0A9
 		_pad	C0AA
 		_seldrum	C0AB
@@ -365,7 +365,7 @@ MODULES
 	FILE /opt/gbdk/lib/small/asxxxx/gb/crt0.o
 		NAME Runtime
 	FILE square.o
-		NAME lcc554390
+		NAME lcc555150
 LIBRARIES
 	LIBRARY /opt/gbdk/lib/small/asxxxx/gbz80/gbz80.lib
 		MODULE crt0_rle.o
