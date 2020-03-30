@@ -1,7 +1,7 @@
-CC	= lcc -Wa-l -Wl-m -Wl-j
+AS = lcc -c
+CC = lcc -Wa-l -Wl-m -Wl-yt3 -Wl-yo4 -Wl-ya4
 
 BINS	= square.gb \
-
 
 
 all:	$(BINS)

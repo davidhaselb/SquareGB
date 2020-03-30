@@ -1038,6 +1038,7 @@ loadD()
 
 void savePattern()
 {
+	ENABLE_RAM_MBC1;
 	//printf("\n NEW \n");
 	switch(currentSaveSlot)
 	{
@@ -1099,6 +1100,7 @@ void savePattern()
 			storeDDC = delayC;
 			break;
 	}
+	DISABLE_RAM_MBC1;
 	performantdelay(1);
 	wait_vbl_done();
 }
