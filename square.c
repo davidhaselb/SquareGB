@@ -50,6 +50,14 @@ https://github.com/gingemonster/GamingMonstersGameBoySampleCode/blob/master/08_s
 
 #define J_AB 0x30U
 
+#define J_STAUP 0x84U
+#define J_STADO 0x88U
+//0000 0000 1000 0000 START 0x80U
+//0000 0000 0000 1000 DOWN
+//0000 0000 1000 1000
+//0000 0000 0000 0100 DOWN
+//0000 0000 1000 0100
+
 unsigned char squareA[] =
 {
 	0xFF, 0xFF, 0x81, 0x81,0x81,0x81,0x81,0x81,0x81,0x81,0x81,0x81,0x81,0x81, 0xFF, 0xFF
@@ -922,15 +930,52 @@ void main()
             
         joy = joypad();
 		
+		if (joypad() == J_LEFT)
+        { 
+			decreasePulses();
+			performantdelay(5);
+        }
+
+        if (joypad() == J_RIGHT)
+        { 
+			increasePulses();
+			performantdelay(5);
+        }
 		
-        if (joypad() == J_SELECT)
-        {
+		if (joypad() == J_DOWN)
+        { 
+			decreaseSteps();
+			performantdelay(5);
+        }
+
+        if (joypad() == J_UP)
+        { 
+			increaseSteps();
+			performantdelay(5);
+        }
+		
+
+        if (padext == J_STAUP)
+        { 
+	      	tempo--;
+			performantdelay(2);
+        }
+		
+        if (padext == J_STADO)
+        { 
+	      	tempo++;
+			performantdelay(2);
+		}
+        
+
+		if(padext == J_SEUP)
+		{
 			seldrum += 1;
 			if (seldrum == 3)
 			{
 				seldrum = 0;
 			}
-			waitpadup();
+			performantdelay(10);
 			cDelay = 0;
 			cOffStep = 0;
 			switch(seldrum)
@@ -955,13 +1000,10 @@ void main()
 		    set_sprite_tile(4, 8);
 		    move_sprite(4, 8, dXlut[cOffStep]);//8,144
 			wait_vbl_done();
-			//updateUI();	
-			//printf("Selected %d \n", seldrum);
 		}
 		
-
-        if (joypad() == J_START)
-        { 
+		if(padext == J_SEDOWN)
+		{
 	      	if (modus == 0)
           	{
 			   clkA = 0;
@@ -983,12 +1025,19 @@ void main()
 			//updateUI();
 			//printf("Modus: %d \n", modus);
 			wait_vbl_done();
-			waitpadup();
-        }
+			performantdelay(10);
+		}
 		
+		if(padext == J_SELEFT)
+		{
+		}
+		
+		if(padext == J_SERIGHT)
+		{
+		}
        /* if (joypad() == J_DOWN && tempo != 1 )
         { 
-        	tempo--;
+        	
 			//printf("Tempo: %d \n", tempo);
 			waitpadup();
 			//updateUI();
@@ -1003,29 +1052,9 @@ void main()
 			//updateUI();
         }*/
 		
-		if (joypad() == J_LEFT)
-        { 
-			decreasePulses();
-			performantdelay(5);
-        }
-
-        if (joypad() == J_RIGHT)
-        { 
-			increasePulses();
-			performantdelay(5);
-        }
 		
-		if (joypad() == J_DOWN)
-        { 
-			decreaseSteps();
-			performantdelay(5);
-        }
-
-        if (joypad() == J_UP)
-        { 
-			increaseSteps();
-			performantdelay(5);
-        }
+		
+		
 		
 		if ( padext == J_AUP)
 		{
