@@ -1,9 +1,9 @@
                               1 ;--------------------------------------------------------
                               2 ; File Created by SDCC : FreeWare ANSI-C Compiler
-                              3 ; Version 2.3.1 Mon Mar 30 17:08:56 2020
+                              3 ; Version 2.3.1 Mon Mar 30 17:17:04 2020
                               4 
                               5 ;--------------------------------------------------------
-                              6 	.module lcc616210
+                              6 	.module lcc619280
                               7 	
                               8 ;--------------------------------------------------------
                               9 ; Public variables in this module
@@ -234,7 +234,7 @@
                             234 	.area _GSFINAL
                             235 	.area _GSINIT
                             236 ;	square.c 53
-                            237 ;	square.c 1063
+                            237 ;	square.c 1083
                             238 ;	genArrayInit
                             239 ; _saveRegsForCall: sendSetSize: 0 deInUse: 0 bcInUse: 0 deSending: 0
    0000 21 00 00            240 	ld	hl,#_squareA
@@ -246,7 +246,7 @@
    000C FF FF               246 	.db	0xFF, 0xFF
    000E 00                  247 	.db	0
                             248 ;	square.c 58
-                            249 ;	square.c 1063
+                            249 ;	square.c 1083
                             250 ;	genArrayInit
                             251 ; _saveRegsForCall: sendSetSize: 0 deInUse: 0 bcInUse: 0 deSending: 0
    000F 21 10 00            252 	ld	hl,#_squareB
@@ -258,7 +258,7 @@
    001D 7E 7E 00 00         258 	.db	0x7E, 0x7E, 0x00, 0x00
    0021 00                  259 	.db	0
                             260 ;	square.c 64
-                            261 ;	square.c 1063
+                            261 ;	square.c 1083
                             262 ;	genArrayInit
                             263 ; _saveRegsForCall: sendSetSize: 0 deInUse: 0 bcInUse: 0 deSending: 0
    0022 21 20 00            264 	ld	hl,#_squareC
@@ -270,7 +270,7 @@
    0030 00 00 00 00         270 	.db	0x00, 0x00, 0x00, 0x00
    0034 00                  271 	.db	0
                             272 ;	square.c 69
-                            273 ;	square.c 1063
+                            273 ;	square.c 1083
                             274 ;	genArrayInit
                             275 ; _saveRegsForCall: sendSetSize: 0 deInUse: 0 bcInUse: 0 deSending: 0
    0035 21 30 00            276 	ld	hl,#_midiC
@@ -282,7 +282,7 @@
    0046 FA C3               281 	.db	-6,0xC3
    0048 00                  282 	.db	0
                             283 ;	square.c 74
-                            284 ;	square.c 1063
+                            284 ;	square.c 1083
                             285 ;	genArrayInit
                             286 ; _saveRegsForCall: sendSetSize: 0 deInUse: 0 bcInUse: 0 deSending: 0
    0049 21 40 00            287 	ld	hl,#_offsetC
@@ -294,7 +294,7 @@
         3C 3C
    0060 00                  292 	.db	0
                             293 ;	square.c 80
-                            294 ;	square.c 1063
+                            294 ;	square.c 1083
                             295 ;	genArrayInit
                             296 ; _saveRegsForCall: sendSetSize: 0 deInUse: 0 bcInUse: 0 deSending: 0
    0061 21 50 00            297 	ld	hl,#_swingC
@@ -306,7 +306,7 @@
         00 00
    0078 00                  302 	.db	0
                             303 ;	square.c 85
-                            304 ;	square.c 1063
+                            304 ;	square.c 1083
                             305 ;	genArrayInit
                             306 ; _saveRegsForCall: sendSetSize: 0 deInUse: 0 bcInUse: 0 deSending: 0
    0079 21 60 00            307 	ld	hl,#_saveC
@@ -318,7 +318,7 @@
         10 10
    0090 00                  312 	.db	0
                             313 ;	square.c 91
-                            314 ;	square.c 1063
+                            314 ;	square.c 1083
                             315 ;	genArrayInit
                             316 ; _saveRegsForCall: sendSetSize: 0 deInUse: 0 bcInUse: 0 deSending: 0
    0091 21 70 00            317 	ld	hl,#_drumA
@@ -326,7 +326,7 @@
    0097 E0 00               319 	.db	-32,0x00
    0099 00                  320 	.db	0
                             321 ;	square.c 92
-                            322 ;	square.c 1063
+                            322 ;	square.c 1083
                             323 ;	genArrayInit
                             324 ; _saveRegsForCall: sendSetSize: 0 deInUse: 0 bcInUse: 0 deSending: 0
    009A 21 90 00            325 	ld	hl,#_drumB
@@ -334,7 +334,7 @@
    00A0 E0 00               327 	.db	-32,0x00
    00A2 00                  328 	.db	0
                             329 ;	square.c 93
-                            330 ;	square.c 1063
+                            330 ;	square.c 1083
                             331 ;	genArrayInit
                             332 ; _saveRegsForCall: sendSetSize: 0 deInUse: 0 bcInUse: 0 deSending: 0
    00A3 21 B0 00            333 	ld	hl,#_drumC
@@ -342,7 +342,7 @@
    00A9 E0 00               335 	.db	-32,0x00
    00AB 00                  336 	.db	0
                             337 ;	square.c 95
-                            338 ;	square.c 1063
+                            338 ;	square.c 1083
                             339 ;	genArrayInit
                             340 ; _saveRegsForCall: sendSetSize: 0 deInUse: 0 bcInUse: 0 deSending: 0
    00AC 21 D0 00            341 	ld	hl,#_dXlut
@@ -358,7 +358,7 @@
         18 14
    00D3 00                  348 	.db	0
                             349 ;	square.c 96
-                            350 ;	square.c 1063
+                            350 ;	square.c 1083
                             351 ;	genArrayInit
                             352 ; _saveRegsForCall: sendSetSize: 0 deInUse: 0 bcInUse: 0 deSending: 0
    00D4 21 F0 00            353 	ld	hl,#_dYlut
@@ -4899,1234 +4899,1199 @@
    0F43 CD 00 00           4884 	call	_set_sprite_tile
    0F46 E8 02              4885 	lda	sp,2(sp)
                            4886 ;	square.c 854
-                           4887 ;	genPlus
+                           4887 ;	genMinus
                            4888 ;	AOP_HL for _totalStepsA
-                           4889 ;	Can't optimise plus by inc, falling back to the normal way
-   0F48 3E D0              4890 	ld	a,#<_dXlut
-   0F4A 21 24 01           4891 	ld	hl,#_totalStepsA
-   0F4D 86                 4892 	add	a,(hl)
-   0F4E 4F                 4893 	ld	c,a
-   0F4F 3E 00              4894 	ld	a,#>_dXlut
-   0F51 CE 00              4895 	adc	a,#0x00
-   0F53 47                 4896 	ld	b,a
-                           4897 ;	genPointerGet
-   0F54 0A                 4898 	ld	a,(bc)
-   0F55 4F                 4899 	ld	c,a
-                           4900 ;	genPlus
-                           4901 ;	AOP_HL for _numberOfPulsesA
-                           4902 ;	AOP_STK for _main_sloc0_1_0
-                           4903 ;	Can't optimise plus by inc, falling back to the normal way
-   0F56 11 F0 00           4904 	ld	de,#_dYlut
-   0F59 21 23 01           4905 	ld	hl,#_numberOfPulsesA
-   0F5C 6E                 4906 	ld	l,(hl)
-   0F5D 26 00              4907 	ld	h,#0x00
-   0F5F 19                 4908 	add	hl,de
-   0F60 7D                 4909 	ld	a,l
-   0F61 54                 4910 	ld	d,h
-   0F62 F8 01              4911 	lda	hl,1(sp)
-                           4912 ;	genPointerGet
-                           4913 ;	AOP_STK for _main_sloc0_1_0
-   0F64 22                 4914 	ld	(hl+),a
-   0F65 72                 4915 	ld	(hl),d
-   0F66 5F                 4916 	ld	e,a
-   0F67 1A                 4917 	ld	a,(de)
-   0F68 47                 4918 	ld	b,a
-                           4919 ;	genIpush
-                           4920 ; _saveRegsForCall: sendSetSize: 0 deInUse: 0 bcInUse: 0 deSending: 0
-   0F69 79                 4921 	ld	a,c
-   0F6A F5                 4922 	push	af
-   0F6B 33                 4923 	inc	sp
-                           4924 ;	genIpush
-   0F6C 78                 4925 	ld	a,b
-   0F6D F5                 4926 	push	af
-   0F6E 33                 4927 	inc	sp
-                           4928 ;	genIpush
-   0F6F 3E 00              4929 	ld	a,#0x00
-   0F71 F5                 4930 	push	af
-   0F72 33                 4931 	inc	sp
-                           4932 ;	genCall
-   0F73 CD 00 00           4933 	call	_move_sprite
-   0F76 E8 03              4934 	lda	sp,3(sp)
-                           4935 ;	square.c 856
+   0F48 21 24 01           4889 	ld	hl,#_totalStepsA
+   0F4B 7E                 4890 	ld	a,(hl)
+   0F4C C6 FF              4891 	add	a,#0xFF
+   0F4E 4F                 4892 	ld	c,a
+                           4893 ;	genPlus
+                           4894 ;	Can't optimise plus by inc, falling back to the normal way
+   0F4F 3E D0              4895 	ld	a,#<_dXlut
+   0F51 81                 4896 	add	a,c
+   0F52 4F                 4897 	ld	c,a
+   0F53 3E 00              4898 	ld	a,#>_dXlut
+   0F55 CE 00              4899 	adc	a,#0x00
+   0F57 47                 4900 	ld	b,a
+                           4901 ;	genPointerGet
+   0F58 0A                 4902 	ld	a,(bc)
+   0F59 4F                 4903 	ld	c,a
+                           4904 ;	genMinus
+                           4905 ;	AOP_HL for _numberOfPulsesA
+   0F5A 21 23 01           4906 	ld	hl,#_numberOfPulsesA
+   0F5D 7E                 4907 	ld	a,(hl)
+   0F5E C6 FF              4908 	add	a,#0xFF
+   0F60 47                 4909 	ld	b,a
+                           4910 ;	genPlus
+                           4911 ;	AOP_STK for _main_sloc0_1_0
+                           4912 ;	Can't optimise plus by inc, falling back to the normal way
+   0F61 11 F0 00           4913 	ld	de,#_dYlut
+   0F64 68                 4914 	ld	l,b
+   0F65 26 00              4915 	ld	h,#0x00
+   0F67 19                 4916 	add	hl,de
+   0F68 7D                 4917 	ld	a,l
+   0F69 54                 4918 	ld	d,h
+   0F6A F8 01              4919 	lda	hl,1(sp)
+                           4920 ;	genPointerGet
+                           4921 ;	AOP_STK for _main_sloc0_1_0
+   0F6C 22                 4922 	ld	(hl+),a
+   0F6D 72                 4923 	ld	(hl),d
+   0F6E 5F                 4924 	ld	e,a
+   0F6F 1A                 4925 	ld	a,(de)
+   0F70 47                 4926 	ld	b,a
+                           4927 ;	genIpush
+                           4928 ; _saveRegsForCall: sendSetSize: 0 deInUse: 0 bcInUse: 0 deSending: 0
+   0F71 79                 4929 	ld	a,c
+   0F72 F5                 4930 	push	af
+   0F73 33                 4931 	inc	sp
+                           4932 ;	genIpush
+   0F74 78                 4933 	ld	a,b
+   0F75 F5                 4934 	push	af
+   0F76 33                 4935 	inc	sp
                            4936 ;	genIpush
-                           4937 ; _saveRegsForCall: sendSetSize: 0 deInUse: 0 bcInUse: 0 deSending: 0
-   0F78 21 10 00           4938 	ld	hl,#_squareB
-   0F7B E5                 4939 	push	hl
-                           4940 ;	genIpush
-   0F7C 21 02 04           4941 	ld	hl,#0x0402
-   0F7F E5                 4942 	push	hl
-                           4943 ;	genCall
-   0F80 CD 00 00           4944 	call	_set_sprite_data
-   0F83 E8 04              4945 	lda	sp,4(sp)
-                           4946 ;	square.c 857
-                           4947 ;	genIpush
-                           4948 ; _saveRegsForCall: sendSetSize: 0 deInUse: 0 bcInUse: 0 deSending: 0
-   0F85 21 01 02           4949 	ld	hl,#0x0201
-   0F88 E5                 4950 	push	hl
+   0F77 3E 00              4937 	ld	a,#0x00
+   0F79 F5                 4938 	push	af
+   0F7A 33                 4939 	inc	sp
+                           4940 ;	genCall
+   0F7B CD 00 00           4941 	call	_move_sprite
+   0F7E E8 03              4942 	lda	sp,3(sp)
+                           4943 ;	square.c 856
+                           4944 ;	genIpush
+                           4945 ; _saveRegsForCall: sendSetSize: 0 deInUse: 0 bcInUse: 0 deSending: 0
+   0F80 21 10 00           4946 	ld	hl,#_squareB
+   0F83 E5                 4947 	push	hl
+                           4948 ;	genIpush
+   0F84 21 02 04           4949 	ld	hl,#0x0402
+   0F87 E5                 4950 	push	hl
                            4951 ;	genCall
-   0F89 CD 00 00           4952 	call	_set_sprite_tile
-   0F8C E8 02              4953 	lda	sp,2(sp)
-                           4954 ;	square.c 858
-                           4955 ;	genPlus
-                           4956 ;	AOP_HL for _totalStepsB
-                           4957 ;	Can't optimise plus by inc, falling back to the normal way
-   0F8E 3E D0              4958 	ld	a,#<_dXlut
-   0F90 21 27 01           4959 	ld	hl,#_totalStepsB
-   0F93 86                 4960 	add	a,(hl)
-   0F94 4F                 4961 	ld	c,a
-   0F95 3E 00              4962 	ld	a,#>_dXlut
-   0F97 CE 00              4963 	adc	a,#0x00
-   0F99 47                 4964 	ld	b,a
-                           4965 ;	genPointerGet
-   0F9A 0A                 4966 	ld	a,(bc)
-   0F9B 4F                 4967 	ld	c,a
-                           4968 ;	genPlus
-                           4969 ;	AOP_HL for _numberOfPulsesB
-                           4970 ;	AOP_STK for _main_sloc0_1_0
-                           4971 ;	Can't optimise plus by inc, falling back to the normal way
-   0F9C 11 F0 00           4972 	ld	de,#_dYlut
-   0F9F 21 26 01           4973 	ld	hl,#_numberOfPulsesB
-   0FA2 6E                 4974 	ld	l,(hl)
-   0FA3 26 00              4975 	ld	h,#0x00
-   0FA5 19                 4976 	add	hl,de
-   0FA6 7D                 4977 	ld	a,l
-   0FA7 54                 4978 	ld	d,h
-   0FA8 F8 01              4979 	lda	hl,1(sp)
-                           4980 ;	genPointerGet
-                           4981 ;	AOP_STK for _main_sloc0_1_0
-   0FAA 22                 4982 	ld	(hl+),a
-   0FAB 72                 4983 	ld	(hl),d
-   0FAC 5F                 4984 	ld	e,a
-   0FAD 1A                 4985 	ld	a,(de)
-   0FAE 47                 4986 	ld	b,a
-                           4987 ;	genIpush
-                           4988 ; _saveRegsForCall: sendSetSize: 0 deInUse: 0 bcInUse: 0 deSending: 0
-   0FAF 79                 4989 	ld	a,c
-   0FB0 F5                 4990 	push	af
-   0FB1 33                 4991 	inc	sp
-                           4992 ;	genIpush
-   0FB2 78                 4993 	ld	a,b
-   0FB3 F5                 4994 	push	af
-   0FB4 33                 4995 	inc	sp
-                           4996 ;	genIpush
-   0FB5 3E 01              4997 	ld	a,#0x01
-   0FB7 F5                 4998 	push	af
-   0FB8 33                 4999 	inc	sp
-                           5000 ;	genCall
-   0FB9 CD 00 00           5001 	call	_move_sprite
-   0FBC E8 03              5002 	lda	sp,3(sp)
-                           5003 ;	square.c 860
-                           5004 ;	genIpush
-                           5005 ; _saveRegsForCall: sendSetSize: 0 deInUse: 0 bcInUse: 0 deSending: 0
-   0FBE 21 20 00           5006 	ld	hl,#_squareC
-   0FC1 E5                 5007 	push	hl
+   0F88 CD 00 00           4952 	call	_set_sprite_data
+   0F8B E8 04              4953 	lda	sp,4(sp)
+                           4954 ;	square.c 857
+                           4955 ;	genIpush
+                           4956 ; _saveRegsForCall: sendSetSize: 0 deInUse: 0 bcInUse: 0 deSending: 0
+   0F8D 21 01 02           4957 	ld	hl,#0x0201
+   0F90 E5                 4958 	push	hl
+                           4959 ;	genCall
+   0F91 CD 00 00           4960 	call	_set_sprite_tile
+   0F94 E8 02              4961 	lda	sp,2(sp)
+                           4962 ;	square.c 858
+                           4963 ;	genMinus
+                           4964 ;	AOP_HL for _totalStepsB
+   0F96 21 27 01           4965 	ld	hl,#_totalStepsB
+   0F99 7E                 4966 	ld	a,(hl)
+   0F9A C6 FF              4967 	add	a,#0xFF
+   0F9C 4F                 4968 	ld	c,a
+                           4969 ;	genPlus
+                           4970 ;	Can't optimise plus by inc, falling back to the normal way
+   0F9D 3E D0              4971 	ld	a,#<_dXlut
+   0F9F 81                 4972 	add	a,c
+   0FA0 4F                 4973 	ld	c,a
+   0FA1 3E 00              4974 	ld	a,#>_dXlut
+   0FA3 CE 00              4975 	adc	a,#0x00
+   0FA5 47                 4976 	ld	b,a
+                           4977 ;	genPointerGet
+   0FA6 0A                 4978 	ld	a,(bc)
+   0FA7 4F                 4979 	ld	c,a
+                           4980 ;	genMinus
+                           4981 ;	AOP_HL for _numberOfPulsesB
+   0FA8 21 26 01           4982 	ld	hl,#_numberOfPulsesB
+   0FAB 7E                 4983 	ld	a,(hl)
+   0FAC C6 FF              4984 	add	a,#0xFF
+   0FAE 47                 4985 	ld	b,a
+                           4986 ;	genPlus
+                           4987 ;	AOP_STK for _main_sloc0_1_0
+                           4988 ;	Can't optimise plus by inc, falling back to the normal way
+   0FAF 11 F0 00           4989 	ld	de,#_dYlut
+   0FB2 68                 4990 	ld	l,b
+   0FB3 26 00              4991 	ld	h,#0x00
+   0FB5 19                 4992 	add	hl,de
+   0FB6 7D                 4993 	ld	a,l
+   0FB7 54                 4994 	ld	d,h
+   0FB8 F8 01              4995 	lda	hl,1(sp)
+                           4996 ;	genPointerGet
+                           4997 ;	AOP_STK for _main_sloc0_1_0
+   0FBA 22                 4998 	ld	(hl+),a
+   0FBB 72                 4999 	ld	(hl),d
+   0FBC 5F                 5000 	ld	e,a
+   0FBD 1A                 5001 	ld	a,(de)
+   0FBE 47                 5002 	ld	b,a
+                           5003 ;	genIpush
+                           5004 ; _saveRegsForCall: sendSetSize: 0 deInUse: 0 bcInUse: 0 deSending: 0
+   0FBF 79                 5005 	ld	a,c
+   0FC0 F5                 5006 	push	af
+   0FC1 33                 5007 	inc	sp
                            5008 ;	genIpush
-   0FC2 21 04 06           5009 	ld	hl,#0x0604
-   0FC5 E5                 5010 	push	hl
-                           5011 ;	genCall
-   0FC6 CD 00 00           5012 	call	_set_sprite_data
-   0FC9 E8 04              5013 	lda	sp,4(sp)
-                           5014 ;	square.c 861
-                           5015 ;	genIpush
-                           5016 ; _saveRegsForCall: sendSetSize: 0 deInUse: 0 bcInUse: 0 deSending: 0
-   0FCB 21 02 04           5017 	ld	hl,#0x0402
-   0FCE E5                 5018 	push	hl
-                           5019 ;	genCall
-   0FCF CD 00 00           5020 	call	_set_sprite_tile
-   0FD2 E8 02              5021 	lda	sp,2(sp)
-                           5022 ;	square.c 862
-                           5023 ;	genPlus
-                           5024 ;	AOP_HL for _totalStepsC
-                           5025 ;	Can't optimise plus by inc, falling back to the normal way
-   0FD4 3E D0              5026 	ld	a,#<_dXlut
-   0FD6 21 2A 01           5027 	ld	hl,#_totalStepsC
-   0FD9 86                 5028 	add	a,(hl)
-   0FDA 4F                 5029 	ld	c,a
-   0FDB 3E 00              5030 	ld	a,#>_dXlut
-   0FDD CE 00              5031 	adc	a,#0x00
-   0FDF 47                 5032 	ld	b,a
-                           5033 ;	genPointerGet
-   0FE0 0A                 5034 	ld	a,(bc)
-   0FE1 4F                 5035 	ld	c,a
-                           5036 ;	genPlus
-                           5037 ;	AOP_HL for _numberOfPulsesC
-                           5038 ;	AOP_STK for _main_sloc0_1_0
-                           5039 ;	Can't optimise plus by inc, falling back to the normal way
-   0FE2 11 F0 00           5040 	ld	de,#_dYlut
-   0FE5 21 29 01           5041 	ld	hl,#_numberOfPulsesC
-   0FE8 6E                 5042 	ld	l,(hl)
-   0FE9 26 00              5043 	ld	h,#0x00
-   0FEB 19                 5044 	add	hl,de
-   0FEC 7D                 5045 	ld	a,l
-   0FED 54                 5046 	ld	d,h
-   0FEE F8 01              5047 	lda	hl,1(sp)
-                           5048 ;	genPointerGet
-                           5049 ;	AOP_STK for _main_sloc0_1_0
-   0FF0 22                 5050 	ld	(hl+),a
-   0FF1 72                 5051 	ld	(hl),d
-   0FF2 5F                 5052 	ld	e,a
-   0FF3 1A                 5053 	ld	a,(de)
-   0FF4 47                 5054 	ld	b,a
-                           5055 ;	genIpush
-                           5056 ; _saveRegsForCall: sendSetSize: 0 deInUse: 0 bcInUse: 0 deSending: 0
-   0FF5 79                 5057 	ld	a,c
-   0FF6 F5                 5058 	push	af
-   0FF7 33                 5059 	inc	sp
-                           5060 ;	genIpush
-   0FF8 78                 5061 	ld	a,b
-   0FF9 F5                 5062 	push	af
-   0FFA 33                 5063 	inc	sp
-                           5064 ;	genIpush
-   0FFB 3E 02              5065 	ld	a,#0x02
-   0FFD F5                 5066 	push	af
-   0FFE 33                 5067 	inc	sp
-                           5068 ;	genCall
-   0FFF CD 00 00           5069 	call	_move_sprite
-   1002 E8 03              5070 	lda	sp,3(sp)
-                           5071 ;	square.c 864
-                           5072 ;	genIpush
-                           5073 ; _saveRegsForCall: sendSetSize: 0 deInUse: 0 bcInUse: 0 deSending: 0
-   1004 21 30 00           5074 	ld	hl,#_midiC
-   1007 E5                 5075 	push	hl
-                           5076 ;	genIpush
-   1008 21 06 08           5077 	ld	hl,#0x0806
-   100B E5                 5078 	push	hl
-                           5079 ;	genCall
-   100C CD 00 00           5080 	call	_set_sprite_data
-   100F E8 04              5081 	lda	sp,4(sp)
-                           5082 ;	square.c 865
-                           5083 ;	genIpush
-                           5084 ; _saveRegsForCall: sendSetSize: 0 deInUse: 0 bcInUse: 0 deSending: 0
-   1011 21 03 06           5085 	ld	hl,#0x0603
-   1014 E5                 5086 	push	hl
-                           5087 ;	genCall
-   1015 CD 00 00           5088 	call	_set_sprite_tile
-   1018 E8 02              5089 	lda	sp,2(sp)
-                           5090 ;	square.c 866
-                           5091 ;	genIpush
-                           5092 ; _saveRegsForCall: sendSetSize: 0 deInUse: 0 bcInUse: 0 deSending: 0
-   101A 21 00 00           5093 	ld	hl,#0x0000
-   101D E5                 5094 	push	hl
-                           5095 ;	genIpush
-   101E 3E 03              5096 	ld	a,#0x03
-   1020 F5                 5097 	push	af
-   1021 33                 5098 	inc	sp
-                           5099 ;	genCall
-   1022 CD 00 00           5100 	call	_move_sprite
-   1025 E8 03              5101 	lda	sp,3(sp)
-                           5102 ;	square.c 868
-                           5103 ;	genIpush
-                           5104 ; _saveRegsForCall: sendSetSize: 0 deInUse: 0 bcInUse: 0 deSending: 0
-   1027 21 40 00           5105 	ld	hl,#_offsetC
-   102A E5                 5106 	push	hl
+   0FC2 78                 5009 	ld	a,b
+   0FC3 F5                 5010 	push	af
+   0FC4 33                 5011 	inc	sp
+                           5012 ;	genIpush
+   0FC5 3E 01              5013 	ld	a,#0x01
+   0FC7 F5                 5014 	push	af
+   0FC8 33                 5015 	inc	sp
+                           5016 ;	genCall
+   0FC9 CD 00 00           5017 	call	_move_sprite
+   0FCC E8 03              5018 	lda	sp,3(sp)
+                           5019 ;	square.c 860
+                           5020 ;	genIpush
+                           5021 ; _saveRegsForCall: sendSetSize: 0 deInUse: 0 bcInUse: 0 deSending: 0
+   0FCE 21 20 00           5022 	ld	hl,#_squareC
+   0FD1 E5                 5023 	push	hl
+                           5024 ;	genIpush
+   0FD2 21 04 06           5025 	ld	hl,#0x0604
+   0FD5 E5                 5026 	push	hl
+                           5027 ;	genCall
+   0FD6 CD 00 00           5028 	call	_set_sprite_data
+   0FD9 E8 04              5029 	lda	sp,4(sp)
+                           5030 ;	square.c 861
+                           5031 ;	genIpush
+                           5032 ; _saveRegsForCall: sendSetSize: 0 deInUse: 0 bcInUse: 0 deSending: 0
+   0FDB 21 02 04           5033 	ld	hl,#0x0402
+   0FDE E5                 5034 	push	hl
+                           5035 ;	genCall
+   0FDF CD 00 00           5036 	call	_set_sprite_tile
+   0FE2 E8 02              5037 	lda	sp,2(sp)
+                           5038 ;	square.c 862
+                           5039 ;	genMinus
+                           5040 ;	AOP_HL for _totalStepsC
+   0FE4 21 2A 01           5041 	ld	hl,#_totalStepsC
+   0FE7 7E                 5042 	ld	a,(hl)
+   0FE8 C6 FF              5043 	add	a,#0xFF
+   0FEA 4F                 5044 	ld	c,a
+                           5045 ;	genPlus
+                           5046 ;	Can't optimise plus by inc, falling back to the normal way
+   0FEB 3E D0              5047 	ld	a,#<_dXlut
+   0FED 81                 5048 	add	a,c
+   0FEE 4F                 5049 	ld	c,a
+   0FEF 3E 00              5050 	ld	a,#>_dXlut
+   0FF1 CE 00              5051 	adc	a,#0x00
+   0FF3 47                 5052 	ld	b,a
+                           5053 ;	genPointerGet
+   0FF4 0A                 5054 	ld	a,(bc)
+   0FF5 4F                 5055 	ld	c,a
+                           5056 ;	genMinus
+                           5057 ;	AOP_HL for _numberOfPulsesC
+   0FF6 21 29 01           5058 	ld	hl,#_numberOfPulsesC
+   0FF9 7E                 5059 	ld	a,(hl)
+   0FFA C6 FF              5060 	add	a,#0xFF
+   0FFC 47                 5061 	ld	b,a
+                           5062 ;	genPlus
+                           5063 ;	AOP_STK for _main_sloc0_1_0
+                           5064 ;	Can't optimise plus by inc, falling back to the normal way
+   0FFD 11 F0 00           5065 	ld	de,#_dYlut
+   1000 68                 5066 	ld	l,b
+   1001 26 00              5067 	ld	h,#0x00
+   1003 19                 5068 	add	hl,de
+   1004 7D                 5069 	ld	a,l
+   1005 54                 5070 	ld	d,h
+   1006 F8 01              5071 	lda	hl,1(sp)
+                           5072 ;	genPointerGet
+                           5073 ;	AOP_STK for _main_sloc0_1_0
+   1008 22                 5074 	ld	(hl+),a
+   1009 72                 5075 	ld	(hl),d
+   100A 5F                 5076 	ld	e,a
+   100B 1A                 5077 	ld	a,(de)
+   100C 47                 5078 	ld	b,a
+                           5079 ;	genIpush
+                           5080 ; _saveRegsForCall: sendSetSize: 0 deInUse: 0 bcInUse: 0 deSending: 0
+   100D 79                 5081 	ld	a,c
+   100E F5                 5082 	push	af
+   100F 33                 5083 	inc	sp
+                           5084 ;	genIpush
+   1010 78                 5085 	ld	a,b
+   1011 F5                 5086 	push	af
+   1012 33                 5087 	inc	sp
+                           5088 ;	genIpush
+   1013 3E 02              5089 	ld	a,#0x02
+   1015 F5                 5090 	push	af
+   1016 33                 5091 	inc	sp
+                           5092 ;	genCall
+   1017 CD 00 00           5093 	call	_move_sprite
+   101A E8 03              5094 	lda	sp,3(sp)
+                           5095 ;	square.c 864
+                           5096 ;	genIpush
+                           5097 ; _saveRegsForCall: sendSetSize: 0 deInUse: 0 bcInUse: 0 deSending: 0
+   101C 21 30 00           5098 	ld	hl,#_midiC
+   101F E5                 5099 	push	hl
+                           5100 ;	genIpush
+   1020 21 06 08           5101 	ld	hl,#0x0806
+   1023 E5                 5102 	push	hl
+                           5103 ;	genCall
+   1024 CD 00 00           5104 	call	_set_sprite_data
+   1027 E8 04              5105 	lda	sp,4(sp)
+                           5106 ;	square.c 865
                            5107 ;	genIpush
-   102B 21 08 0A           5108 	ld	hl,#0x0A08
-   102E E5                 5109 	push	hl
-                           5110 ;	genCall
-   102F CD 00 00           5111 	call	_set_sprite_data
-   1032 E8 04              5112 	lda	sp,4(sp)
-                           5113 ;	square.c 869
-                           5114 ;	genIpush
-                           5115 ; _saveRegsForCall: sendSetSize: 0 deInUse: 0 bcInUse: 0 deSending: 0
-   1034 21 04 08           5116 	ld	hl,#0x0804
-   1037 E5                 5117 	push	hl
-                           5118 ;	genCall
-   1038 CD 00 00           5119 	call	_set_sprite_tile
-   103B E8 02              5120 	lda	sp,2(sp)
-                           5121 ;	square.c 870
-                           5122 ;	genPlus
-                           5123 ;	AOP_HL for _offStepA
-                           5124 ;	Can't optimise plus by inc, falling back to the normal way
-   103D 3E D0              5125 	ld	a,#<_dXlut
-   103F 21 2C 01           5126 	ld	hl,#_offStepA
-   1042 86                 5127 	add	a,(hl)
-   1043 4F                 5128 	ld	c,a
-   1044 3E 00              5129 	ld	a,#>_dXlut
-   1046 CE 00              5130 	adc	a,#0x00
-   1048 47                 5131 	ld	b,a
-                           5132 ;	genPointerGet
-   1049 0A                 5133 	ld	a,(bc)
-                           5134 ;	genIpush
-                           5135 ; _saveRegsForCall: sendSetSize: 0 deInUse: 0 bcInUse: 0 deSending: 0
-   104A 4F                 5136 	ld	c,a
-   104B F5                 5137 	push	af
-   104C 33                 5138 	inc	sp
-                           5139 ;	genIpush
-   104D 21 04 08           5140 	ld	hl,#0x0804
-   1050 E5                 5141 	push	hl
+                           5108 ; _saveRegsForCall: sendSetSize: 0 deInUse: 0 bcInUse: 0 deSending: 0
+   1029 21 03 06           5109 	ld	hl,#0x0603
+   102C E5                 5110 	push	hl
+                           5111 ;	genCall
+   102D CD 00 00           5112 	call	_set_sprite_tile
+   1030 E8 02              5113 	lda	sp,2(sp)
+                           5114 ;	square.c 866
+                           5115 ;	genIpush
+                           5116 ; _saveRegsForCall: sendSetSize: 0 deInUse: 0 bcInUse: 0 deSending: 0
+   1032 21 00 00           5117 	ld	hl,#0x0000
+   1035 E5                 5118 	push	hl
+                           5119 ;	genIpush
+   1036 3E 03              5120 	ld	a,#0x03
+   1038 F5                 5121 	push	af
+   1039 33                 5122 	inc	sp
+                           5123 ;	genCall
+   103A CD 00 00           5124 	call	_move_sprite
+   103D E8 03              5125 	lda	sp,3(sp)
+                           5126 ;	square.c 868
+                           5127 ;	genIpush
+                           5128 ; _saveRegsForCall: sendSetSize: 0 deInUse: 0 bcInUse: 0 deSending: 0
+   103F 21 40 00           5129 	ld	hl,#_offsetC
+   1042 E5                 5130 	push	hl
+                           5131 ;	genIpush
+   1043 21 08 0A           5132 	ld	hl,#0x0A08
+   1046 E5                 5133 	push	hl
+                           5134 ;	genCall
+   1047 CD 00 00           5135 	call	_set_sprite_data
+   104A E8 04              5136 	lda	sp,4(sp)
+                           5137 ;	square.c 869
+                           5138 ;	genIpush
+                           5139 ; _saveRegsForCall: sendSetSize: 0 deInUse: 0 bcInUse: 0 deSending: 0
+   104C 21 04 08           5140 	ld	hl,#0x0804
+   104F E5                 5141 	push	hl
                            5142 ;	genCall
-   1051 CD 00 00           5143 	call	_move_sprite
-   1054 E8 03              5144 	lda	sp,3(sp)
-                           5145 ;	square.c 872
-                           5146 ;	genIpush
-                           5147 ; _saveRegsForCall: sendSetSize: 0 deInUse: 0 bcInUse: 0 deSending: 0
-   1056 21 50 00           5148 	ld	hl,#_swingC
-   1059 E5                 5149 	push	hl
-                           5150 ;	genIpush
-   105A 21 0A 0C           5151 	ld	hl,#0x0C0A
-   105D E5                 5152 	push	hl
-                           5153 ;	genCall
-   105E CD 00 00           5154 	call	_set_sprite_data
-   1061 E8 04              5155 	lda	sp,4(sp)
-                           5156 ;	square.c 873
-                           5157 ;	genIpush
-                           5158 ; _saveRegsForCall: sendSetSize: 0 deInUse: 0 bcInUse: 0 deSending: 0
-   1063 21 05 0A           5159 	ld	hl,#0x0A05
-   1066 E5                 5160 	push	hl
-                           5161 ;	genCall
-   1067 CD 00 00           5162 	call	_set_sprite_tile
-   106A E8 02              5163 	lda	sp,2(sp)
-                           5164 ;	square.c 874
-                           5165 ;	genPlus
-                           5166 ;	AOP_HL for _delayA
-                           5167 ;	genPlusIncr
-                           5168 ;	Can't optimise plus by inc, falling back to the normal way
-   106C 21 1D 01           5169 	ld	hl,#_delayA
-   106F 7E                 5170 	ld	a,(hl)
-   1070 C6 08              5171 	add	a,#0x08
-   1072 4F                 5172 	ld	c,a
-                           5173 ;	genIpush
-                           5174 ; _saveRegsForCall: sendSetSize: 0 deInUse: 0 bcInUse: 0 deSending: 0
-   1073 3E 98              5175 	ld	a,#0x98
-   1075 F5                 5176 	push	af
-   1076 33                 5177 	inc	sp
-                           5178 ;	genIpush
-   1077 79                 5179 	ld	a,c
-   1078 F5                 5180 	push	af
-   1079 33                 5181 	inc	sp
-                           5182 ;	genIpush
-   107A 3E 05              5183 	ld	a,#0x05
-   107C F5                 5184 	push	af
-   107D 33                 5185 	inc	sp
-                           5186 ;	genCall
-   107E CD 00 00           5187 	call	_move_sprite
-   1081 E8 03              5188 	lda	sp,3(sp)
-                           5189 ;	square.c 877
-                           5190 ;	genIpush
-                           5191 ; _saveRegsForCall: sendSetSize: 0 deInUse: 0 bcInUse: 0 deSending: 0
-   1083 21 60 00           5192 	ld	hl,#_saveC
-   1086 E5                 5193 	push	hl
-                           5194 ;	genIpush
-   1087 21 0C 0E           5195 	ld	hl,#0x0E0C
-   108A E5                 5196 	push	hl
-                           5197 ;	genCall
-   108B CD 00 00           5198 	call	_set_sprite_data
-   108E E8 04              5199 	lda	sp,4(sp)
-                           5200 ;	square.c 878
-                           5201 ;	genIpush
-                           5202 ; _saveRegsForCall: sendSetSize: 0 deInUse: 0 bcInUse: 0 deSending: 0
-   1090 21 06 0C           5203 	ld	hl,#0x0C06
-   1093 E5                 5204 	push	hl
-                           5205 ;	genCall
-   1094 CD 00 00           5206 	call	_set_sprite_tile
-   1097 E8 02              5207 	lda	sp,2(sp)
-                           5208 ;	square.c 879
-                           5209 ;	genIpush
-                           5210 ; _saveRegsForCall: sendSetSize: 0 deInUse: 0 bcInUse: 0 deSending: 0
-   1099 21 A0 90           5211 	ld	hl,#0x90A0
-   109C E5                 5212 	push	hl
-                           5213 ;	genIpush
-   109D 3E 06              5214 	ld	a,#0x06
-   109F F5                 5215 	push	af
-   10A0 33                 5216 	inc	sp
-                           5217 ;	genCall
-   10A1 CD 00 00           5218 	call	_move_sprite
-   10A4 E8 03              5219 	lda	sp,3(sp)
-                           5220 ;	square.c 881
-                           5221 ;	genIpush
-                           5222 ; _saveRegsForCall: sendSetSize: 0 deInUse: 0 bcInUse: 0 deSending: 0
-   10A6 21 07 00           5223 	ld	hl,#0x0007
-   10A9 E5                 5224 	push	hl
-                           5225 ;	genCall
-   10AA CD 00 00           5226 	call	_set_sprite_tile
-   10AD E8 02              5227 	lda	sp,2(sp)
-                           5228 ;	square.c 882
-                           5229 ;	genIpush
-                           5230 ; _saveRegsForCall: sendSetSize: 0 deInUse: 0 bcInUse: 0 deSending: 0
-   10AF 21 08 10           5231 	ld	hl,#0x1008
-   10B2 E5                 5232 	push	hl
+   1050 CD 00 00           5143 	call	_set_sprite_tile
+   1053 E8 02              5144 	lda	sp,2(sp)
+                           5145 ;	square.c 870
+                           5146 ;	genPlus
+                           5147 ;	AOP_HL for _offStepA
+                           5148 ;	Can't optimise plus by inc, falling back to the normal way
+   1055 3E D0              5149 	ld	a,#<_dXlut
+   1057 21 2C 01           5150 	ld	hl,#_offStepA
+   105A 86                 5151 	add	a,(hl)
+   105B 4F                 5152 	ld	c,a
+   105C 3E 00              5153 	ld	a,#>_dXlut
+   105E CE 00              5154 	adc	a,#0x00
+   1060 47                 5155 	ld	b,a
+                           5156 ;	genPointerGet
+   1061 0A                 5157 	ld	a,(bc)
+                           5158 ;	genIpush
+                           5159 ; _saveRegsForCall: sendSetSize: 0 deInUse: 0 bcInUse: 0 deSending: 0
+   1062 4F                 5160 	ld	c,a
+   1063 F5                 5161 	push	af
+   1064 33                 5162 	inc	sp
+                           5163 ;	genIpush
+   1065 21 04 08           5164 	ld	hl,#0x0804
+   1068 E5                 5165 	push	hl
+                           5166 ;	genCall
+   1069 CD 00 00           5167 	call	_move_sprite
+   106C E8 03              5168 	lda	sp,3(sp)
+                           5169 ;	square.c 872
+                           5170 ;	genIpush
+                           5171 ; _saveRegsForCall: sendSetSize: 0 deInUse: 0 bcInUse: 0 deSending: 0
+   106E 21 50 00           5172 	ld	hl,#_swingC
+   1071 E5                 5173 	push	hl
+                           5174 ;	genIpush
+   1072 21 0A 0C           5175 	ld	hl,#0x0C0A
+   1075 E5                 5176 	push	hl
+                           5177 ;	genCall
+   1076 CD 00 00           5178 	call	_set_sprite_data
+   1079 E8 04              5179 	lda	sp,4(sp)
+                           5180 ;	square.c 873
+                           5181 ;	genIpush
+                           5182 ; _saveRegsForCall: sendSetSize: 0 deInUse: 0 bcInUse: 0 deSending: 0
+   107B 21 05 0A           5183 	ld	hl,#0x0A05
+   107E E5                 5184 	push	hl
+                           5185 ;	genCall
+   107F CD 00 00           5186 	call	_set_sprite_tile
+   1082 E8 02              5187 	lda	sp,2(sp)
+                           5188 ;	square.c 874
+                           5189 ;	genPlus
+                           5190 ;	AOP_HL for _delayA
+                           5191 ;	genPlusIncr
+                           5192 ;	Can't optimise plus by inc, falling back to the normal way
+   1084 21 1D 01           5193 	ld	hl,#_delayA
+   1087 7E                 5194 	ld	a,(hl)
+   1088 C6 08              5195 	add	a,#0x08
+   108A 4F                 5196 	ld	c,a
+                           5197 ;	genIpush
+                           5198 ; _saveRegsForCall: sendSetSize: 0 deInUse: 0 bcInUse: 0 deSending: 0
+   108B 3E 98              5199 	ld	a,#0x98
+   108D F5                 5200 	push	af
+   108E 33                 5201 	inc	sp
+                           5202 ;	genIpush
+   108F 79                 5203 	ld	a,c
+   1090 F5                 5204 	push	af
+   1091 33                 5205 	inc	sp
+                           5206 ;	genIpush
+   1092 3E 05              5207 	ld	a,#0x05
+   1094 F5                 5208 	push	af
+   1095 33                 5209 	inc	sp
+                           5210 ;	genCall
+   1096 CD 00 00           5211 	call	_move_sprite
+   1099 E8 03              5212 	lda	sp,3(sp)
+                           5213 ;	square.c 877
+                           5214 ;	genIpush
+                           5215 ; _saveRegsForCall: sendSetSize: 0 deInUse: 0 bcInUse: 0 deSending: 0
+   109B 21 60 00           5216 	ld	hl,#_saveC
+   109E E5                 5217 	push	hl
+                           5218 ;	genIpush
+   109F 21 0C 0E           5219 	ld	hl,#0x0E0C
+   10A2 E5                 5220 	push	hl
+                           5221 ;	genCall
+   10A3 CD 00 00           5222 	call	_set_sprite_data
+   10A6 E8 04              5223 	lda	sp,4(sp)
+                           5224 ;	square.c 878
+                           5225 ;	genIpush
+                           5226 ; _saveRegsForCall: sendSetSize: 0 deInUse: 0 bcInUse: 0 deSending: 0
+   10A8 21 06 0C           5227 	ld	hl,#0x0C06
+   10AB E5                 5228 	push	hl
+                           5229 ;	genCall
+   10AC CD 00 00           5230 	call	_set_sprite_tile
+   10AF E8 02              5231 	lda	sp,2(sp)
+                           5232 ;	square.c 879
                            5233 ;	genIpush
-   10B3 3E 07              5234 	ld	a,#0x07
-   10B5 F5                 5235 	push	af
-   10B6 33                 5236 	inc	sp
-                           5237 ;	genCall
-   10B7 CD 00 00           5238 	call	_move_sprite
-   10BA E8 03              5239 	lda	sp,3(sp)
-                           5240 ;	square.c 884
+                           5234 ; _saveRegsForCall: sendSetSize: 0 deInUse: 0 bcInUse: 0 deSending: 0
+   10B1 21 A0 90           5235 	ld	hl,#0x90A0
+   10B4 E5                 5236 	push	hl
+                           5237 ;	genIpush
+   10B5 3E 06              5238 	ld	a,#0x06
+   10B7 F5                 5239 	push	af
+   10B8 33                 5240 	inc	sp
                            5241 ;	genCall
-                           5242 ; _saveRegsForCall: sendSetSize: 0 deInUse: 0 bcInUse: 0 deSending: 0
-   10BC CD 00 00           5243 	call	_disable_interrupts
-                           5244 ;	square.c 885
+   10B9 CD 00 00           5242 	call	_move_sprite
+   10BC E8 03              5243 	lda	sp,3(sp)
+                           5244 ;	square.c 881
                            5245 ;	genIpush
                            5246 ; _saveRegsForCall: sendSetSize: 0 deInUse: 0 bcInUse: 0 deSending: 0
-   10BF 21 7A 0E           5247 	ld	hl,#_tim
-   10C2 E5                 5248 	push	hl
+   10BE 21 07 00           5247 	ld	hl,#0x0007
+   10C1 E5                 5248 	push	hl
                            5249 ;	genCall
-   10C3 CD 00 00           5250 	call	_add_TIM
-   10C6 E8 02              5251 	lda	sp,2(sp)
-                           5252 ;	square.c 886
-                           5253 ;	genCall
+   10C2 CD 00 00           5250 	call	_set_sprite_tile
+   10C5 E8 02              5251 	lda	sp,2(sp)
+                           5252 ;	square.c 882
+                           5253 ;	genIpush
                            5254 ; _saveRegsForCall: sendSetSize: 0 deInUse: 0 bcInUse: 0 deSending: 0
-   10C8 CD 00 00           5255 	call	_enable_interrupts
-                           5256 ;	square.c 887
-                           5257 ;	genAssign
-   10CB 01 06 FF           5258 	ld	bc,#0xFF06
-                           5259 ;	genAssign (pointer)
-                           5260 ;	AOP_HL for _samp_freq
-   10CE 21 32 01           5261 	ld	hl,#_samp_freq
-   10D1 7E                 5262 	ld	a,(hl)
-   10D2 02                 5263 	ld	(bc),a
-                           5264 ;	square.c 892
-                           5265 ;	genAssign
-   10D3 01 07 FF           5266 	ld	bc,#0xFF07
-                           5267 ;	genAssign (pointer)
-   10D6 3E 07              5268 	ld	a,#0x07
-   10D8 02                 5269 	ld	(bc),a
-                           5270 ;	square.c 894
-                           5271 ;	genIpush
-                           5272 ; _saveRegsForCall: sendSetSize: 0 deInUse: 0 bcInUse: 0 deSending: 0
-   10D9 3E 05              5273 	ld	a,#0x05
-   10DB F5                 5274 	push	af
-   10DC 33                 5275 	inc	sp
-                           5276 ;	genCall
-   10DD CD 00 00           5277 	call	_set_interrupts
-   10E0 E8 01              5278 	lda	sp,1(sp)
-                           5279 ;	square.c 896
-                           5280 ;	genAssign
-   10E2 01 40 FF           5281 	ld	bc,#0xFF40
-                           5282 ;	genAssign
-                           5283 ;	AOP_STK for _main_sloc0_1_0
-   10E5 F8 01              5284 	lda	hl,1(sp)
-   10E7 36 40              5285 	ld	(hl),#0x40
-   10E9 23                 5286 	inc	hl
-   10EA 36 FF              5287 	ld	(hl),#0xFF
-                           5288 ;	genPointerGet
-                           5289 ;	AOP_STK for _main_sloc0_1_0
-                           5290 ;	AOP_STK for _main_sloc1_1_0
-   10EC 2B                 5291 	dec	hl
-   10ED 5E                 5292 	ld	e,(hl)
-   10EE 23                 5293 	inc	hl
-   10EF 56                 5294 	ld	d,(hl)
-   10F0 1A                 5295 	ld	a,(de)
-   10F1 2B                 5296 	dec	hl
-   10F2 2B                 5297 	dec	hl
-                           5298 ;	genOr
-                           5299 ;	AOP_STK for _main_sloc1_1_0
-   10F3 77                 5300 	ld      (hl),a
-                           5301 ; Removed redundent load
-   10F4 F6 80              5302 	or	a,#0x80
-                           5303 ;	genAssign (pointer)
-   10F6 02                 5304 	ld	(bc),a
-                           5305 ;	square.c 897
+   10C7 21 08 10           5255 	ld	hl,#0x1008
+   10CA E5                 5256 	push	hl
+                           5257 ;	genIpush
+   10CB 3E 07              5258 	ld	a,#0x07
+   10CD F5                 5259 	push	af
+   10CE 33                 5260 	inc	sp
+                           5261 ;	genCall
+   10CF CD 00 00           5262 	call	_move_sprite
+   10D2 E8 03              5263 	lda	sp,3(sp)
+                           5264 ;	square.c 884
+                           5265 ;	genCall
+                           5266 ; _saveRegsForCall: sendSetSize: 0 deInUse: 0 bcInUse: 0 deSending: 0
+   10D4 CD 00 00           5267 	call	_disable_interrupts
+                           5268 ;	square.c 885
+                           5269 ;	genIpush
+                           5270 ; _saveRegsForCall: sendSetSize: 0 deInUse: 0 bcInUse: 0 deSending: 0
+   10D7 21 7A 0E           5271 	ld	hl,#_tim
+   10DA E5                 5272 	push	hl
+                           5273 ;	genCall
+   10DB CD 00 00           5274 	call	_add_TIM
+   10DE E8 02              5275 	lda	sp,2(sp)
+                           5276 ;	square.c 886
+                           5277 ;	genCall
+                           5278 ; _saveRegsForCall: sendSetSize: 0 deInUse: 0 bcInUse: 0 deSending: 0
+   10E0 CD 00 00           5279 	call	_enable_interrupts
+                           5280 ;	square.c 887
+                           5281 ;	genAssign
+   10E3 01 06 FF           5282 	ld	bc,#0xFF06
+                           5283 ;	genAssign (pointer)
+                           5284 ;	AOP_HL for _samp_freq
+   10E6 21 32 01           5285 	ld	hl,#_samp_freq
+   10E9 7E                 5286 	ld	a,(hl)
+   10EA 02                 5287 	ld	(bc),a
+                           5288 ;	square.c 892
+                           5289 ;	genAssign
+   10EB 01 07 FF           5290 	ld	bc,#0xFF07
+                           5291 ;	genAssign (pointer)
+   10EE 3E 07              5292 	ld	a,#0x07
+   10F0 02                 5293 	ld	(bc),a
+                           5294 ;	square.c 894
+                           5295 ;	genIpush
+                           5296 ; _saveRegsForCall: sendSetSize: 0 deInUse: 0 bcInUse: 0 deSending: 0
+   10F1 3E 05              5297 	ld	a,#0x05
+   10F3 F5                 5298 	push	af
+   10F4 33                 5299 	inc	sp
+                           5300 ;	genCall
+   10F5 CD 00 00           5301 	call	_set_interrupts
+   10F8 E8 01              5302 	lda	sp,1(sp)
+                           5303 ;	square.c 896
+                           5304 ;	genAssign
+   10FA 01 40 FF           5305 	ld	bc,#0xFF40
                            5306 ;	genAssign
-   10F7 01 40 FF           5307 	ld	bc,#0xFF40
-                           5308 ;	genAssign
-                           5309 ;	AOP_STK for _main_sloc0_1_0
-   10FA 23                 5310 	inc	hl
-   10FB 36 40              5311 	ld	(hl),#0x40
-   10FD 23                 5312 	inc	hl
-   10FE 36 FF              5313 	ld	(hl),#0xFF
-                           5314 ;	genPointerGet
-                           5315 ;	AOP_STK for _main_sloc0_1_0
-                           5316 ;	AOP_STK for _main_sloc1_1_0
-   1100 2B                 5317 	dec	hl
-   1101 5E                 5318 	ld	e,(hl)
-   1102 23                 5319 	inc	hl
-   1103 56                 5320 	ld	d,(hl)
-   1104 1A                 5321 	ld	a,(de)
-   1105 2B                 5322 	dec	hl
-   1106 2B                 5323 	dec	hl
-                           5324 ;	genOr
-                           5325 ;	AOP_STK for _main_sloc1_1_0
-   1107 77                 5326 	ld      (hl),a
-                           5327 ; Removed redundent load
-   1108 F6 02              5328 	or	a,#0x02
-                           5329 ;	genAssign (pointer)
-   110A 02                 5330 	ld	(bc),a
-                           5331 ;	square.c 901
-                           5332 ;	genLabel
-   110B                    5333 00148$:
-                           5334 ;	square.c 903
-                           5335 ;	genCall
-                           5336 ; _saveRegsForCall: sendSetSize: 0 deInUse: 0 bcInUse: 0 deSending: 0
-   110B CD 00 00           5337 	call	_joypad
-   110E 4B                 5338 	ld	c,e
-                           5339 ;	genCmpEq
-                           5340 ; genCmpEq: left 1, right 1, result 0
-   110F 79                 5341 	ld	a,c
-   1110 B7                 5342 	or	a,a
-   1111 CA 1B 11           5343 	jp	z,00102$
-   1114                    5344 00176$:
-                           5345 ;	square.c 904
-                           5346 ;	genPlus
-                           5347 ;	AOP_HL for _pad
-                           5348 ;	genPlusIncr
-   1114 21 3B 01           5349 	ld	hl,#_pad
-   1117 34                 5350 	inc	(hl)
-                           5351 ;	genGoto
-   1118 C3 20 11           5352 	jp	00103$
-                           5353 ;	genLabel
-   111B                    5354 00102$:
-                           5355 ;	square.c 907
-                           5356 ;	genAssign
-                           5357 ;	AOP_HL for _pad
-   111B 21 3B 01           5358 	ld	hl,#_pad
-   111E 36 00              5359 	ld	(hl),#0x00
-                           5360 ;	genLabel
-   1120                    5361 00103$:
-                           5362 ;	square.c 910
-                           5363 ;	genCall
-                           5364 ; _saveRegsForCall: sendSetSize: 0 deInUse: 0 bcInUse: 0 deSending: 0
-   1120 CD 00 00           5365 	call	_joypad
-   1123 4B                 5366 	ld	c,e
-                           5367 ;	genCmpEq
-                           5368 ;	AOP_HL for _joy
-                           5369 ; genCmpEq: left 1, right 1, result 0
-   1124 21 3A 01           5370 	ld	hl,#_joy
-   1127 7E                 5371 	ld	a,(hl)
-   1128 B9                 5372 	cp	c
-   1129 20 02              5373 	jr	nz,00177$
-   112B 18 03              5374 	jr	00178$
-   112D                    5375 00177$:
-   112D C3 39 11           5376 	jp	00104$
-   1130                    5377 00178$:
-                           5378 ;	genCmpGt
-                           5379 ;	AOP_HL for _pad
-   1130 3E 0A              5380 	ld	a,#0x0A
-   1132 21 3B 01           5381 	ld	hl,#_pad
-   1135 96                 5382 	sub	a,(hl)
-   1136 D2 43 11           5383 	jp	nc,00105$
+                           5307 ;	AOP_STK for _main_sloc0_1_0
+   10FD F8 01              5308 	lda	hl,1(sp)
+   10FF 36 40              5309 	ld	(hl),#0x40
+   1101 23                 5310 	inc	hl
+   1102 36 FF              5311 	ld	(hl),#0xFF
+                           5312 ;	genPointerGet
+                           5313 ;	AOP_STK for _main_sloc0_1_0
+                           5314 ;	AOP_STK for _main_sloc1_1_0
+   1104 2B                 5315 	dec	hl
+   1105 5E                 5316 	ld	e,(hl)
+   1106 23                 5317 	inc	hl
+   1107 56                 5318 	ld	d,(hl)
+   1108 1A                 5319 	ld	a,(de)
+   1109 2B                 5320 	dec	hl
+   110A 2B                 5321 	dec	hl
+                           5322 ;	genOr
+                           5323 ;	AOP_STK for _main_sloc1_1_0
+   110B 77                 5324 	ld      (hl),a
+                           5325 ; Removed redundent load
+   110C F6 80              5326 	or	a,#0x80
+                           5327 ;	genAssign (pointer)
+   110E 02                 5328 	ld	(bc),a
+                           5329 ;	square.c 897
+                           5330 ;	genAssign
+   110F 01 40 FF           5331 	ld	bc,#0xFF40
+                           5332 ;	genAssign
+                           5333 ;	AOP_STK for _main_sloc0_1_0
+   1112 23                 5334 	inc	hl
+   1113 36 40              5335 	ld	(hl),#0x40
+   1115 23                 5336 	inc	hl
+   1116 36 FF              5337 	ld	(hl),#0xFF
+                           5338 ;	genPointerGet
+                           5339 ;	AOP_STK for _main_sloc0_1_0
+                           5340 ;	AOP_STK for _main_sloc1_1_0
+   1118 2B                 5341 	dec	hl
+   1119 5E                 5342 	ld	e,(hl)
+   111A 23                 5343 	inc	hl
+   111B 56                 5344 	ld	d,(hl)
+   111C 1A                 5345 	ld	a,(de)
+   111D 2B                 5346 	dec	hl
+   111E 2B                 5347 	dec	hl
+                           5348 ;	genOr
+                           5349 ;	AOP_STK for _main_sloc1_1_0
+   111F 77                 5350 	ld      (hl),a
+                           5351 ; Removed redundent load
+   1120 F6 02              5352 	or	a,#0x02
+                           5353 ;	genAssign (pointer)
+   1122 02                 5354 	ld	(bc),a
+                           5355 ;	square.c 901
+                           5356 ;	genLabel
+   1123                    5357 00142$:
+                           5358 ;	square.c 903
+                           5359 ;	genCall
+                           5360 ; _saveRegsForCall: sendSetSize: 0 deInUse: 0 bcInUse: 0 deSending: 0
+   1123 CD 00 00           5361 	call	_joypad
+   1126 4B                 5362 	ld	c,e
+                           5363 ;	genCmpEq
+                           5364 ; genCmpEq: left 1, right 1, result 0
+   1127 79                 5365 	ld	a,c
+   1128 B7                 5366 	or	a,a
+   1129 CA 33 11           5367 	jp	z,00102$
+   112C                    5368 00166$:
+                           5369 ;	square.c 904
+                           5370 ;	genPlus
+                           5371 ;	AOP_HL for _pad
+                           5372 ;	genPlusIncr
+   112C 21 3B 01           5373 	ld	hl,#_pad
+   112F 34                 5374 	inc	(hl)
+                           5375 ;	genGoto
+   1130 C3 38 11           5376 	jp	00103$
+                           5377 ;	genLabel
+   1133                    5378 00102$:
+                           5379 ;	square.c 907
+                           5380 ;	genAssign
+                           5381 ;	AOP_HL for _pad
+   1133 21 3B 01           5382 	ld	hl,#_pad
+   1136 36 00              5383 	ld	(hl),#0x00
                            5384 ;	genLabel
-   1139                    5385 00104$:
-                           5386 ;	square.c 911
+   1138                    5385 00103$:
+                           5386 ;	square.c 910
                            5387 ;	genCall
                            5388 ; _saveRegsForCall: sendSetSize: 0 deInUse: 0 bcInUse: 0 deSending: 0
-   1139 CD 00 00           5389 	call	_joypad
-                           5390 ;	AOP_HL for _padext
-   113C 21 39 01           5391 	ld	hl,#_padext
-   113F 73                 5392 	ld	(hl),e
-                           5393 ;	genGoto
-   1140 C3 48 11           5394 	jp	00106$
-                           5395 ;	genLabel
-   1143                    5396 00105$:
-                           5397 ;	square.c 914
-                           5398 ;	genAssign
-                           5399 ;	AOP_HL for _padext
-   1143 21 39 01           5400 	ld	hl,#_padext
-   1146 36 00              5401 	ld	(hl),#0x00
-                           5402 ;	genLabel
-   1148                    5403 00106$:
-                           5404 ;	square.c 918
-                           5405 ;	genCall
-                           5406 ; _saveRegsForCall: sendSetSize: 0 deInUse: 0 bcInUse: 0 deSending: 0
-   1148 CD 00 00           5407 	call	_joypad
-   114B 4B                 5408 	ld	c,e
-                           5409 ;	genCmpEq
-                           5410 ;	AOP_HL for _joy
-                           5411 ; genCmpEq: left 1, right 1, result 0
-   114C 21 3A 01           5412 	ld	hl,#_joy
-   114F 7E                 5413 	ld	a,(hl)
-   1150 B9                 5414 	cp	c
-   1151 20 03              5415 	jr	nz,00179$
-   1153 C3 5B 11           5416 	jp	00109$
-   1156                    5417 00179$:
-                           5418 ;	square.c 920
-                           5419 ;	genAssign
-                           5420 ;	AOP_HL for _pad
-   1156 21 3B 01           5421 	ld	hl,#_pad
-   1159 36 00              5422 	ld	(hl),#0x00
-                           5423 ;	genLabel
-   115B                    5424 00109$:
-                           5425 ;	square.c 923
-                           5426 ;	genCall
-                           5427 ; _saveRegsForCall: sendSetSize: 0 deInUse: 0 bcInUse: 0 deSending: 0
-   115B CD 00 00           5428 	call	_joypad
-                           5429 ;	AOP_HL for _joy
-   115E 21 3A 01           5430 	ld	hl,#_joy
-   1161 73                 5431 	ld	(hl),e
-                           5432 ;	square.c 926
-                           5433 ;	genCall
-                           5434 ; _saveRegsForCall: sendSetSize: 0 deInUse: 0 bcInUse: 0 deSending: 0
-   1162 CD 00 00           5435 	call	_joypad
-   1165 4B                 5436 	ld	c,e
-                           5437 ;	genCmpEq
-                           5438 ; genCmpEq: left 1, right 1, result 0
-   1166 79                 5439 	ld	a,c
-   1167 FE 40              5440 	cp	a,#0x40
-   1169 C2 4D 12           5441 	jp	nz,00117$
-   116C 18 03              5442 	jr	00181$
-   116E                    5443 00180$:
-   116E C3 4D 12           5444 	jp	00117$
-   1171                    5445 00181$:
-                           5446 ;	square.c 928
-                           5447 ;	genPlus
-                           5448 ;	AOP_HL for _seldrum
-                           5449 ;	genPlusIncr
-   1171 21 3C 01           5450 	ld	hl,#_seldrum
-   1174 34                 5451 	inc	(hl)
-                           5452 ;	square.c 929
-                           5453 ;	genCmpEq
-                           5454 ;	AOP_HL for _seldrum
-                           5455 ; genCmpEq: left 1, right 1, result 0
-   1175 7E                 5456 	ld	a,(hl)
-   1176 FE 03              5457 	cp	a,#0x03
-   1178 C2 85 11           5458 	jp	nz,00111$
-   117B 18 03              5459 	jr	00183$
-   117D                    5460 00182$:
-   117D C3 85 11           5461 	jp	00111$
-   1180                    5462 00183$:
-                           5463 ;	square.c 931
-                           5464 ;	genAssign
-                           5465 ;	AOP_HL for _seldrum
-   1180 21 3C 01           5466 	ld	hl,#_seldrum
-   1183 36 00              5467 	ld	(hl),#0x00
-                           5468 ;	genLabel
-   1185                    5469 00111$:
-                           5470 ;	square.c 933
-                           5471 ;	genCall
-                           5472 ; _saveRegsForCall: sendSetSize: 0 deInUse: 0 bcInUse: 0 deSending: 0
-   1185 CD 00 00           5473 	call	_waitpadup
-                           5474 ;	square.c 934
-                           5475 ;	genAssign
-                           5476 ;	AOP_HL for _cDelay
-   1188 21 2F 01           5477 	ld	hl,#_cDelay
-   118B 36 00              5478 	ld	(hl),#0x00
-                           5479 ;	square.c 935
-                           5480 ;	genAssign
-                           5481 ;	AOP_HL for _cOffStep
-   118D 21 30 01           5482 	ld	hl,#_cOffStep
-   1190 36 00              5483 	ld	(hl),#0x00
-                           5484 ;	square.c 936
-                           5485 ;	genCmpEq
-                           5486 ;	AOP_HL for _seldrum
-                           5487 ; genCmpEq: left 1, right 1, result 0
-   1192 21 3C 01           5488 	ld	hl,#_seldrum
-   1195 7E                 5489 	ld	a,(hl)
-   1196 B7                 5490 	or	a,a
-   1197 CA AF 11           5491 	jp	z,00112$
-   119A                    5492 00184$:
-                           5493 ;	genCmpEq
-                           5494 ;	AOP_HL for _seldrum
-                           5495 ; genCmpEq: left 1, right 1, result 0
-   119A 21 3C 01           5496 	ld	hl,#_seldrum
-   119D 7E                 5497 	ld	a,(hl)
-   119E FE 01              5498 	cp	a,#0x01
-   11A0 CA C2 11           5499 	jp	z,00113$
-   11A3                    5500 00185$:
-                           5501 ;	genCmpEq
-                           5502 ;	AOP_HL for _seldrum
-                           5503 ; genCmpEq: left 1, right 1, result 0
-   11A3 21 3C 01           5504 	ld	hl,#_seldrum
-   11A6 7E                 5505 	ld	a,(hl)
-   11A7 FE 02              5506 	cp	a,#0x02
-   11A9 CA D5 11           5507 	jp	z,00114$
-   11AC                    5508 00186$:
-                           5509 ;	genGoto
-   11AC C3 E5 11           5510 	jp	00115$
-                           5511 ;	square.c 939
-                           5512 ;	genLabel
-   11AF                    5513 00112$:
-                           5514 ;	genAssign
-                           5515 ;	AOP_HL for _delayA
-                           5516 ;	AOP_HL for _cDelay
-   11AF 21 1D 01           5517 	ld	hl,#_delayA
-   11B2 7E                 5518 	ld	a,(hl)
-   11B3 21 2F 01           5519 	ld	hl,#_cDelay
-   11B6 77                 5520 	ld	(hl),a
-                           5521 ;	square.c 940
-                           5522 ;	genAssign
-                           5523 ;	AOP_HL for _offStepA
-                           5524 ;	AOP_HL for _cOffStep
-   11B7 21 2C 01           5525 	ld	hl,#_offStepA
-   11BA 7E                 5526 	ld	a,(hl)
-   11BB 21 30 01           5527 	ld	hl,#_cOffStep
-   11BE 77                 5528 	ld	(hl),a
-                           5529 ;	square.c 941
-                           5530 ;	genGoto
-   11BF C3 E5 11           5531 	jp	00115$
-                           5532 ;	square.c 943
-                           5533 ;	genLabel
-   11C2                    5534 00113$:
-                           5535 ;	genAssign
-                           5536 ;	AOP_HL for _delayB
-                           5537 ;	AOP_HL for _cDelay
-   11C2 21 1E 01           5538 	ld	hl,#_delayB
-   11C5 7E                 5539 	ld	a,(hl)
-   11C6 21 2F 01           5540 	ld	hl,#_cDelay
-   11C9 77                 5541 	ld	(hl),a
-                           5542 ;	square.c 944
-                           5543 ;	genAssign
-                           5544 ;	AOP_HL for _offStepB
-                           5545 ;	AOP_HL for _cOffStep
-   11CA 21 2D 01           5546 	ld	hl,#_offStepB
-   11CD 7E                 5547 	ld	a,(hl)
-   11CE 21 30 01           5548 	ld	hl,#_cOffStep
-   11D1 77                 5549 	ld	(hl),a
-                           5550 ;	square.c 945
-                           5551 ;	genGoto
-   11D2 C3 E5 11           5552 	jp	00115$
-                           5553 ;	square.c 947
-                           5554 ;	genLabel
-   11D5                    5555 00114$:
-                           5556 ;	genAssign
-                           5557 ;	AOP_HL for _delayC
-                           5558 ;	AOP_HL for _cDelay
-   11D5 21 1F 01           5559 	ld	hl,#_delayC
-   11D8 7E                 5560 	ld	a,(hl)
-   11D9 21 2F 01           5561 	ld	hl,#_cDelay
-   11DC 77                 5562 	ld	(hl),a
-                           5563 ;	square.c 948
-                           5564 ;	genAssign
-                           5565 ;	AOP_HL for _offStepC
-                           5566 ;	AOP_HL for _cOffStep
-   11DD 21 2E 01           5567 	ld	hl,#_offStepC
-   11E0 7E                 5568 	ld	a,(hl)
-   11E1 21 30 01           5569 	ld	hl,#_cOffStep
-   11E4 77                 5570 	ld	(hl),a
-                           5571 ;	square.c 950
-                           5572 ;	genLabel
-   11E5                    5573 00115$:
-                           5574 ;	square.c 951
-                           5575 ;	genCast
-                           5576 ;	AOP_HL for _seldrum
-   11E5 21 3C 01           5577 	ld	hl,#_seldrum
-   11E8 4E                 5578 	ld	c,(hl)
-   11E9 06 00              5579 	ld	b,#0x00
-                           5580 ;	genLeftShift
-   11EB CB 21              5581 	sla	c
-   11ED CB 10              5582 	rl	b
-                           5583 ;	genCast
-                           5584 ; Removed redundent load
-                           5585 ;	genIpush
-                           5586 ; _saveRegsForCall: sendSetSize: 0 deInUse: 0 bcInUse: 0 deSending: 0
-   11EF 79                 5587 	ld	a,c
-   11F0 F5                 5588 	push	af
-   11F1 33                 5589 	inc	sp
-                           5590 ;	genIpush
-   11F2 3E 07              5591 	ld	a,#0x07
-   11F4 F5                 5592 	push	af
-   11F5 33                 5593 	inc	sp
-                           5594 ;	genCall
-   11F6 CD 00 00           5595 	call	_set_sprite_tile
-   11F9 E8 02              5596 	lda	sp,2(sp)
-                           5597 ;	square.c 952
-                           5598 ;	genIpush
-                           5599 ; _saveRegsForCall: sendSetSize: 0 deInUse: 0 bcInUse: 0 deSending: 0
-   11FB 21 08 10           5600 	ld	hl,#0x1008
-   11FE E5                 5601 	push	hl
-                           5602 ;	genIpush
-   11FF 3E 07              5603 	ld	a,#0x07
-   1201 F5                 5604 	push	af
-   1202 33                 5605 	inc	sp
-                           5606 ;	genCall
-   1203 CD 00 00           5607 	call	_move_sprite
-   1206 E8 03              5608 	lda	sp,3(sp)
-                           5609 ;	square.c 953
-                           5610 ;	genIpush
-                           5611 ; _saveRegsForCall: sendSetSize: 0 deInUse: 0 bcInUse: 0 deSending: 0
-   1208 21 05 0A           5612 	ld	hl,#0x0A05
-   120B E5                 5613 	push	hl
-                           5614 ;	genCall
-   120C CD 00 00           5615 	call	_set_sprite_tile
-   120F E8 02              5616 	lda	sp,2(sp)
-                           5617 ;	square.c 954
-                           5618 ;	genPlus
-                           5619 ;	AOP_HL for _cDelay
-                           5620 ;	genPlusIncr
-                           5621 ;	Can't optimise plus by inc, falling back to the normal way
-   1211 21 2F 01           5622 	ld	hl,#_cDelay
-   1214 7E                 5623 	ld	a,(hl)
-   1215 C6 08              5624 	add	a,#0x08
-   1217 4F                 5625 	ld	c,a
+   1138 CD 00 00           5389 	call	_joypad
+   113B 4B                 5390 	ld	c,e
+                           5391 ;	genCmpEq
+                           5392 ;	AOP_HL for _joy
+                           5393 ; genCmpEq: left 1, right 1, result 0
+   113C 21 3A 01           5394 	ld	hl,#_joy
+   113F 7E                 5395 	ld	a,(hl)
+   1140 B9                 5396 	cp	c
+   1141 20 02              5397 	jr	nz,00167$
+   1143 18 03              5398 	jr	00168$
+   1145                    5399 00167$:
+   1145 C3 51 11           5400 	jp	00104$
+   1148                    5401 00168$:
+                           5402 ;	genCmpGt
+                           5403 ;	AOP_HL for _pad
+   1148 3E 0A              5404 	ld	a,#0x0A
+   114A 21 3B 01           5405 	ld	hl,#_pad
+   114D 96                 5406 	sub	a,(hl)
+   114E D2 5B 11           5407 	jp	nc,00105$
+                           5408 ;	genLabel
+   1151                    5409 00104$:
+                           5410 ;	square.c 911
+                           5411 ;	genCall
+                           5412 ; _saveRegsForCall: sendSetSize: 0 deInUse: 0 bcInUse: 0 deSending: 0
+   1151 CD 00 00           5413 	call	_joypad
+                           5414 ;	AOP_HL for _padext
+   1154 21 39 01           5415 	ld	hl,#_padext
+   1157 73                 5416 	ld	(hl),e
+                           5417 ;	genGoto
+   1158 C3 60 11           5418 	jp	00106$
+                           5419 ;	genLabel
+   115B                    5420 00105$:
+                           5421 ;	square.c 914
+                           5422 ;	genAssign
+                           5423 ;	AOP_HL for _padext
+   115B 21 39 01           5424 	ld	hl,#_padext
+   115E 36 00              5425 	ld	(hl),#0x00
+                           5426 ;	genLabel
+   1160                    5427 00106$:
+                           5428 ;	square.c 918
+                           5429 ;	genCall
+                           5430 ; _saveRegsForCall: sendSetSize: 0 deInUse: 0 bcInUse: 0 deSending: 0
+   1160 CD 00 00           5431 	call	_joypad
+   1163 4B                 5432 	ld	c,e
+                           5433 ;	genCmpEq
+                           5434 ;	AOP_HL for _joy
+                           5435 ; genCmpEq: left 1, right 1, result 0
+   1164 21 3A 01           5436 	ld	hl,#_joy
+   1167 7E                 5437 	ld	a,(hl)
+   1168 B9                 5438 	cp	c
+   1169 20 03              5439 	jr	nz,00169$
+   116B C3 73 11           5440 	jp	00109$
+   116E                    5441 00169$:
+                           5442 ;	square.c 920
+                           5443 ;	genAssign
+                           5444 ;	AOP_HL for _pad
+   116E 21 3B 01           5445 	ld	hl,#_pad
+   1171 36 00              5446 	ld	(hl),#0x00
+                           5447 ;	genLabel
+   1173                    5448 00109$:
+                           5449 ;	square.c 923
+                           5450 ;	genCall
+                           5451 ; _saveRegsForCall: sendSetSize: 0 deInUse: 0 bcInUse: 0 deSending: 0
+   1173 CD 00 00           5452 	call	_joypad
+                           5453 ;	AOP_HL for _joy
+   1176 21 3A 01           5454 	ld	hl,#_joy
+   1179 73                 5455 	ld	(hl),e
+                           5456 ;	square.c 926
+                           5457 ;	genCall
+                           5458 ; _saveRegsForCall: sendSetSize: 0 deInUse: 0 bcInUse: 0 deSending: 0
+   117A CD 00 00           5459 	call	_joypad
+   117D 4B                 5460 	ld	c,e
+                           5461 ;	genCmpEq
+                           5462 ; genCmpEq: left 1, right 1, result 0
+   117E 79                 5463 	ld	a,c
+   117F FE 40              5464 	cp	a,#0x40
+   1181 C2 65 12           5465 	jp	nz,00117$
+   1184 18 03              5466 	jr	00171$
+   1186                    5467 00170$:
+   1186 C3 65 12           5468 	jp	00117$
+   1189                    5469 00171$:
+                           5470 ;	square.c 928
+                           5471 ;	genPlus
+                           5472 ;	AOP_HL for _seldrum
+                           5473 ;	genPlusIncr
+   1189 21 3C 01           5474 	ld	hl,#_seldrum
+   118C 34                 5475 	inc	(hl)
+                           5476 ;	square.c 929
+                           5477 ;	genCmpEq
+                           5478 ;	AOP_HL for _seldrum
+                           5479 ; genCmpEq: left 1, right 1, result 0
+   118D 7E                 5480 	ld	a,(hl)
+   118E FE 03              5481 	cp	a,#0x03
+   1190 C2 9D 11           5482 	jp	nz,00111$
+   1193 18 03              5483 	jr	00173$
+   1195                    5484 00172$:
+   1195 C3 9D 11           5485 	jp	00111$
+   1198                    5486 00173$:
+                           5487 ;	square.c 931
+                           5488 ;	genAssign
+                           5489 ;	AOP_HL for _seldrum
+   1198 21 3C 01           5490 	ld	hl,#_seldrum
+   119B 36 00              5491 	ld	(hl),#0x00
+                           5492 ;	genLabel
+   119D                    5493 00111$:
+                           5494 ;	square.c 933
+                           5495 ;	genCall
+                           5496 ; _saveRegsForCall: sendSetSize: 0 deInUse: 0 bcInUse: 0 deSending: 0
+   119D CD 00 00           5497 	call	_waitpadup
+                           5498 ;	square.c 934
+                           5499 ;	genAssign
+                           5500 ;	AOP_HL for _cDelay
+   11A0 21 2F 01           5501 	ld	hl,#_cDelay
+   11A3 36 00              5502 	ld	(hl),#0x00
+                           5503 ;	square.c 935
+                           5504 ;	genAssign
+                           5505 ;	AOP_HL for _cOffStep
+   11A5 21 30 01           5506 	ld	hl,#_cOffStep
+   11A8 36 00              5507 	ld	(hl),#0x00
+                           5508 ;	square.c 936
+                           5509 ;	genCmpEq
+                           5510 ;	AOP_HL for _seldrum
+                           5511 ; genCmpEq: left 1, right 1, result 0
+   11AA 21 3C 01           5512 	ld	hl,#_seldrum
+   11AD 7E                 5513 	ld	a,(hl)
+   11AE B7                 5514 	or	a,a
+   11AF CA C7 11           5515 	jp	z,00112$
+   11B2                    5516 00174$:
+                           5517 ;	genCmpEq
+                           5518 ;	AOP_HL for _seldrum
+                           5519 ; genCmpEq: left 1, right 1, result 0
+   11B2 21 3C 01           5520 	ld	hl,#_seldrum
+   11B5 7E                 5521 	ld	a,(hl)
+   11B6 FE 01              5522 	cp	a,#0x01
+   11B8 CA DA 11           5523 	jp	z,00113$
+   11BB                    5524 00175$:
+                           5525 ;	genCmpEq
+                           5526 ;	AOP_HL for _seldrum
+                           5527 ; genCmpEq: left 1, right 1, result 0
+   11BB 21 3C 01           5528 	ld	hl,#_seldrum
+   11BE 7E                 5529 	ld	a,(hl)
+   11BF FE 02              5530 	cp	a,#0x02
+   11C1 CA ED 11           5531 	jp	z,00114$
+   11C4                    5532 00176$:
+                           5533 ;	genGoto
+   11C4 C3 FD 11           5534 	jp	00115$
+                           5535 ;	square.c 939
+                           5536 ;	genLabel
+   11C7                    5537 00112$:
+                           5538 ;	genAssign
+                           5539 ;	AOP_HL for _delayA
+                           5540 ;	AOP_HL for _cDelay
+   11C7 21 1D 01           5541 	ld	hl,#_delayA
+   11CA 7E                 5542 	ld	a,(hl)
+   11CB 21 2F 01           5543 	ld	hl,#_cDelay
+   11CE 77                 5544 	ld	(hl),a
+                           5545 ;	square.c 940
+                           5546 ;	genAssign
+                           5547 ;	AOP_HL for _offStepA
+                           5548 ;	AOP_HL for _cOffStep
+   11CF 21 2C 01           5549 	ld	hl,#_offStepA
+   11D2 7E                 5550 	ld	a,(hl)
+   11D3 21 30 01           5551 	ld	hl,#_cOffStep
+   11D6 77                 5552 	ld	(hl),a
+                           5553 ;	square.c 941
+                           5554 ;	genGoto
+   11D7 C3 FD 11           5555 	jp	00115$
+                           5556 ;	square.c 943
+                           5557 ;	genLabel
+   11DA                    5558 00113$:
+                           5559 ;	genAssign
+                           5560 ;	AOP_HL for _delayB
+                           5561 ;	AOP_HL for _cDelay
+   11DA 21 1E 01           5562 	ld	hl,#_delayB
+   11DD 7E                 5563 	ld	a,(hl)
+   11DE 21 2F 01           5564 	ld	hl,#_cDelay
+   11E1 77                 5565 	ld	(hl),a
+                           5566 ;	square.c 944
+                           5567 ;	genAssign
+                           5568 ;	AOP_HL for _offStepB
+                           5569 ;	AOP_HL for _cOffStep
+   11E2 21 2D 01           5570 	ld	hl,#_offStepB
+   11E5 7E                 5571 	ld	a,(hl)
+   11E6 21 30 01           5572 	ld	hl,#_cOffStep
+   11E9 77                 5573 	ld	(hl),a
+                           5574 ;	square.c 945
+                           5575 ;	genGoto
+   11EA C3 FD 11           5576 	jp	00115$
+                           5577 ;	square.c 947
+                           5578 ;	genLabel
+   11ED                    5579 00114$:
+                           5580 ;	genAssign
+                           5581 ;	AOP_HL for _delayC
+                           5582 ;	AOP_HL for _cDelay
+   11ED 21 1F 01           5583 	ld	hl,#_delayC
+   11F0 7E                 5584 	ld	a,(hl)
+   11F1 21 2F 01           5585 	ld	hl,#_cDelay
+   11F4 77                 5586 	ld	(hl),a
+                           5587 ;	square.c 948
+                           5588 ;	genAssign
+                           5589 ;	AOP_HL for _offStepC
+                           5590 ;	AOP_HL for _cOffStep
+   11F5 21 2E 01           5591 	ld	hl,#_offStepC
+   11F8 7E                 5592 	ld	a,(hl)
+   11F9 21 30 01           5593 	ld	hl,#_cOffStep
+   11FC 77                 5594 	ld	(hl),a
+                           5595 ;	square.c 950
+                           5596 ;	genLabel
+   11FD                    5597 00115$:
+                           5598 ;	square.c 951
+                           5599 ;	genCast
+                           5600 ;	AOP_HL for _seldrum
+   11FD 21 3C 01           5601 	ld	hl,#_seldrum
+   1200 4E                 5602 	ld	c,(hl)
+   1201 06 00              5603 	ld	b,#0x00
+                           5604 ;	genLeftShift
+   1203 CB 21              5605 	sla	c
+   1205 CB 10              5606 	rl	b
+                           5607 ;	genCast
+                           5608 ; Removed redundent load
+                           5609 ;	genIpush
+                           5610 ; _saveRegsForCall: sendSetSize: 0 deInUse: 0 bcInUse: 0 deSending: 0
+   1207 79                 5611 	ld	a,c
+   1208 F5                 5612 	push	af
+   1209 33                 5613 	inc	sp
+                           5614 ;	genIpush
+   120A 3E 07              5615 	ld	a,#0x07
+   120C F5                 5616 	push	af
+   120D 33                 5617 	inc	sp
+                           5618 ;	genCall
+   120E CD 00 00           5619 	call	_set_sprite_tile
+   1211 E8 02              5620 	lda	sp,2(sp)
+                           5621 ;	square.c 952
+                           5622 ;	genIpush
+                           5623 ; _saveRegsForCall: sendSetSize: 0 deInUse: 0 bcInUse: 0 deSending: 0
+   1213 21 08 10           5624 	ld	hl,#0x1008
+   1216 E5                 5625 	push	hl
                            5626 ;	genIpush
-                           5627 ; _saveRegsForCall: sendSetSize: 0 deInUse: 0 bcInUse: 0 deSending: 0
-   1218 3E 98              5628 	ld	a,#0x98
-   121A F5                 5629 	push	af
-   121B 33                 5630 	inc	sp
-                           5631 ;	genIpush
-   121C 79                 5632 	ld	a,c
-   121D F5                 5633 	push	af
-   121E 33                 5634 	inc	sp
-                           5635 ;	genIpush
-   121F 3E 05              5636 	ld	a,#0x05
-   1221 F5                 5637 	push	af
-   1222 33                 5638 	inc	sp
-                           5639 ;	genCall
-   1223 CD 00 00           5640 	call	_move_sprite
-   1226 E8 03              5641 	lda	sp,3(sp)
-                           5642 ;	square.c 955
-                           5643 ;	genIpush
-                           5644 ; _saveRegsForCall: sendSetSize: 0 deInUse: 0 bcInUse: 0 deSending: 0
-   1228 21 04 08           5645 	ld	hl,#0x0804
-   122B E5                 5646 	push	hl
-                           5647 ;	genCall
-   122C CD 00 00           5648 	call	_set_sprite_tile
-   122F E8 02              5649 	lda	sp,2(sp)
-                           5650 ;	square.c 956
-                           5651 ;	genPlus
-                           5652 ;	AOP_HL for _cOffStep
-                           5653 ;	Can't optimise plus by inc, falling back to the normal way
-   1231 3E D0              5654 	ld	a,#<_dXlut
-   1233 21 30 01           5655 	ld	hl,#_cOffStep
-   1236 86                 5656 	add	a,(hl)
-   1237 4F                 5657 	ld	c,a
-   1238 3E 00              5658 	ld	a,#>_dXlut
-   123A CE 00              5659 	adc	a,#0x00
-   123C 47                 5660 	ld	b,a
-                           5661 ;	genPointerGet
-   123D 0A                 5662 	ld	a,(bc)
-                           5663 ;	genIpush
-                           5664 ; _saveRegsForCall: sendSetSize: 0 deInUse: 0 bcInUse: 0 deSending: 0
-   123E 4F                 5665 	ld	c,a
-   123F F5                 5666 	push	af
-   1240 33                 5667 	inc	sp
-                           5668 ;	genIpush
-   1241 21 04 08           5669 	ld	hl,#0x0804
-   1244 E5                 5670 	push	hl
+   1217 3E 07              5627 	ld	a,#0x07
+   1219 F5                 5628 	push	af
+   121A 33                 5629 	inc	sp
+                           5630 ;	genCall
+   121B CD 00 00           5631 	call	_move_sprite
+   121E E8 03              5632 	lda	sp,3(sp)
+                           5633 ;	square.c 953
+                           5634 ;	genIpush
+                           5635 ; _saveRegsForCall: sendSetSize: 0 deInUse: 0 bcInUse: 0 deSending: 0
+   1220 21 05 0A           5636 	ld	hl,#0x0A05
+   1223 E5                 5637 	push	hl
+                           5638 ;	genCall
+   1224 CD 00 00           5639 	call	_set_sprite_tile
+   1227 E8 02              5640 	lda	sp,2(sp)
+                           5641 ;	square.c 954
+                           5642 ;	genPlus
+                           5643 ;	AOP_HL for _cDelay
+                           5644 ;	genPlusIncr
+                           5645 ;	Can't optimise plus by inc, falling back to the normal way
+   1229 21 2F 01           5646 	ld	hl,#_cDelay
+   122C 7E                 5647 	ld	a,(hl)
+   122D C6 08              5648 	add	a,#0x08
+   122F 4F                 5649 	ld	c,a
+                           5650 ;	genIpush
+                           5651 ; _saveRegsForCall: sendSetSize: 0 deInUse: 0 bcInUse: 0 deSending: 0
+   1230 3E 98              5652 	ld	a,#0x98
+   1232 F5                 5653 	push	af
+   1233 33                 5654 	inc	sp
+                           5655 ;	genIpush
+   1234 79                 5656 	ld	a,c
+   1235 F5                 5657 	push	af
+   1236 33                 5658 	inc	sp
+                           5659 ;	genIpush
+   1237 3E 05              5660 	ld	a,#0x05
+   1239 F5                 5661 	push	af
+   123A 33                 5662 	inc	sp
+                           5663 ;	genCall
+   123B CD 00 00           5664 	call	_move_sprite
+   123E E8 03              5665 	lda	sp,3(sp)
+                           5666 ;	square.c 955
+                           5667 ;	genIpush
+                           5668 ; _saveRegsForCall: sendSetSize: 0 deInUse: 0 bcInUse: 0 deSending: 0
+   1240 21 04 08           5669 	ld	hl,#0x0804
+   1243 E5                 5670 	push	hl
                            5671 ;	genCall
-   1245 CD 00 00           5672 	call	_move_sprite
-   1248 E8 03              5673 	lda	sp,3(sp)
-                           5674 ;	square.c 957
-                           5675 ;	genCall
-                           5676 ; _saveRegsForCall: sendSetSize: 0 deInUse: 0 bcInUse: 0 deSending: 0
-   124A CD 00 00           5677 	call	_wait_vbl_done
-                           5678 ;	genLabel
-   124D                    5679 00117$:
-                           5680 ;	square.c 962
-                           5681 ;	genCall
-                           5682 ; _saveRegsForCall: sendSetSize: 0 deInUse: 0 bcInUse: 0 deSending: 0
-   124D CD 00 00           5683 	call	_joypad
-   1250 4B                 5684 	ld	c,e
-                           5685 ;	genCmpEq
-                           5686 ; genCmpEq: left 1, right 1, result 0
-   1251 79                 5687 	ld	a,c
-   1252 FE 80              5688 	cp	a,#0x80
-   1254 C2 C6 12           5689 	jp	nz,00122$
-   1257 18 03              5690 	jr	00190$
-   1259                    5691 00189$:
-   1259 C3 C6 12           5692 	jp	00122$
-   125C                    5693 00190$:
-                           5694 ;	square.c 964
-                           5695 ;	genCmpEq
-                           5696 ;	AOP_HL for _modus
-                           5697 ; genCmpEq: left 1, right 1, result 0
-   125C 21 38 01           5698 	ld	hl,#_modus
-   125F 7E                 5699 	ld	a,(hl)
-   1260 B7                 5700 	or	a,a
-   1261 C2 96 12           5701 	jp	nz,00119$
-   1264 18 03              5702 	jr	00192$
-   1266                    5703 00191$:
-   1266 C3 96 12           5704 	jp	00119$
-   1269                    5705 00192$:
-                           5706 ;	square.c 966
-                           5707 ;	genAssign
-                           5708 ;	AOP_HL for _clkA
-   1269 21 25 01           5709 	ld	hl,#_clkA
-   126C 36 00              5710 	ld	(hl),#0x00
-                           5711 ;	square.c 967
-                           5712 ;	genAssign
-                           5713 ;	AOP_HL for _clkB
-   126E 21 28 01           5714 	ld	hl,#_clkB
-   1271 36 00              5715 	ld	(hl),#0x00
-                           5716 ;	square.c 968
-                           5717 ;	genAssign
-                           5718 ;	AOP_HL for _clkC
-   1273 21 2B 01           5719 	ld	hl,#_clkC
-   1276 36 00              5720 	ld	(hl),#0x00
-                           5721 ;	square.c 969
-                           5722 ;	genAssign
-                           5723 ;	AOP_HL for _modus
-   1278 21 38 01           5724 	ld	hl,#_modus
-   127B 36 01              5725 	ld	(hl),#0x01
-                           5726 ;	square.c 970
-                           5727 ;	genIpush
-                           5728 ; _saveRegsForCall: sendSetSize: 0 deInUse: 0 bcInUse: 0 deSending: 0
-   127D 21 03 06           5729 	ld	hl,#0x0603
-   1280 E5                 5730 	push	hl
-                           5731 ;	genCall
-   1281 CD 00 00           5732 	call	_set_sprite_tile
-   1284 E8 02              5733 	lda	sp,2(sp)
-                           5734 ;	square.c 971
-                           5735 ;	genIpush
-                           5736 ; _saveRegsForCall: sendSetSize: 0 deInUse: 0 bcInUse: 0 deSending: 0
-   1286 21 A0 10           5737 	ld	hl,#0x10A0
-   1289 E5                 5738 	push	hl
-                           5739 ;	genIpush
-   128A 3E 03              5740 	ld	a,#0x03
-   128C F5                 5741 	push	af
-   128D 33                 5742 	inc	sp
-                           5743 ;	genCall
-   128E CD 00 00           5744 	call	_move_sprite
-   1291 E8 03              5745 	lda	sp,3(sp)
-                           5746 ;	genGoto
-   1293 C3 C0 12           5747 	jp	00120$
-                           5748 ;	genLabel
-   1296                    5749 00119$:
-                           5750 ;	square.c 975
-                           5751 ;	genAssign
-                           5752 ;	AOP_HL for _clkA
-   1296 21 25 01           5753 	ld	hl,#_clkA
-   1299 36 00              5754 	ld	(hl),#0x00
-                           5755 ;	square.c 976
-                           5756 ;	genAssign
-                           5757 ;	AOP_HL for _clkB
-   129B 21 28 01           5758 	ld	hl,#_clkB
-   129E 36 00              5759 	ld	(hl),#0x00
-                           5760 ;	square.c 977
-                           5761 ;	genAssign
-                           5762 ;	AOP_HL for _clkC
-   12A0 21 2B 01           5763 	ld	hl,#_clkC
-   12A3 36 00              5764 	ld	(hl),#0x00
-                           5765 ;	square.c 978
-                           5766 ;	genAssign
-                           5767 ;	AOP_HL for _modus
-   12A5 21 38 01           5768 	ld	hl,#_modus
-   12A8 36 00              5769 	ld	(hl),#0x00
-                           5770 ;	square.c 979
-                           5771 ;	genIpush
-                           5772 ; _saveRegsForCall: sendSetSize: 0 deInUse: 0 bcInUse: 0 deSending: 0
-   12AA 21 03 06           5773 	ld	hl,#0x0603
-   12AD E5                 5774 	push	hl
-                           5775 ;	genCall
-   12AE CD 00 00           5776 	call	_set_sprite_tile
-   12B1 E8 02              5777 	lda	sp,2(sp)
-                           5778 ;	square.c 980
-                           5779 ;	genIpush
-                           5780 ; _saveRegsForCall: sendSetSize: 0 deInUse: 0 bcInUse: 0 deSending: 0
-   12B3 21 00 00           5781 	ld	hl,#0x0000
-   12B6 E5                 5782 	push	hl
-                           5783 ;	genIpush
-   12B7 3E 03              5784 	ld	a,#0x03
-   12B9 F5                 5785 	push	af
-   12BA 33                 5786 	inc	sp
-                           5787 ;	genCall
-   12BB CD 00 00           5788 	call	_move_sprite
-   12BE E8 03              5789 	lda	sp,3(sp)
-                           5790 ;	genLabel
-   12C0                    5791 00120$:
-                           5792 ;	square.c 984
-                           5793 ;	genCall
-                           5794 ; _saveRegsForCall: sendSetSize: 0 deInUse: 0 bcInUse: 0 deSending: 0
-   12C0 CD 00 00           5795 	call	_wait_vbl_done
-                           5796 ;	square.c 985
-                           5797 ;	genCall
-                           5798 ; _saveRegsForCall: sendSetSize: 0 deInUse: 0 bcInUse: 0 deSending: 0
-   12C3 CD 00 00           5799 	call	_waitpadup
-                           5800 ;	genLabel
-   12C6                    5801 00122$:
-                           5802 ;	square.c 988
-                           5803 ;	genCall
+   1244 CD 00 00           5672 	call	_set_sprite_tile
+   1247 E8 02              5673 	lda	sp,2(sp)
+                           5674 ;	square.c 956
+                           5675 ;	genPlus
+                           5676 ;	AOP_HL for _cOffStep
+                           5677 ;	Can't optimise plus by inc, falling back to the normal way
+   1249 3E D0              5678 	ld	a,#<_dXlut
+   124B 21 30 01           5679 	ld	hl,#_cOffStep
+   124E 86                 5680 	add	a,(hl)
+   124F 4F                 5681 	ld	c,a
+   1250 3E 00              5682 	ld	a,#>_dXlut
+   1252 CE 00              5683 	adc	a,#0x00
+   1254 47                 5684 	ld	b,a
+                           5685 ;	genPointerGet
+   1255 0A                 5686 	ld	a,(bc)
+                           5687 ;	genIpush
+                           5688 ; _saveRegsForCall: sendSetSize: 0 deInUse: 0 bcInUse: 0 deSending: 0
+   1256 4F                 5689 	ld	c,a
+   1257 F5                 5690 	push	af
+   1258 33                 5691 	inc	sp
+                           5692 ;	genIpush
+   1259 21 04 08           5693 	ld	hl,#0x0804
+   125C E5                 5694 	push	hl
+                           5695 ;	genCall
+   125D CD 00 00           5696 	call	_move_sprite
+   1260 E8 03              5697 	lda	sp,3(sp)
+                           5698 ;	square.c 957
+                           5699 ;	genCall
+                           5700 ; _saveRegsForCall: sendSetSize: 0 deInUse: 0 bcInUse: 0 deSending: 0
+   1262 CD 00 00           5701 	call	_wait_vbl_done
+                           5702 ;	genLabel
+   1265                    5703 00117$:
+                           5704 ;	square.c 962
+                           5705 ;	genCall
+                           5706 ; _saveRegsForCall: sendSetSize: 0 deInUse: 0 bcInUse: 0 deSending: 0
+   1265 CD 00 00           5707 	call	_joypad
+   1268 4B                 5708 	ld	c,e
+                           5709 ;	genCmpEq
+                           5710 ; genCmpEq: left 1, right 1, result 0
+   1269 79                 5711 	ld	a,c
+   126A FE 80              5712 	cp	a,#0x80
+   126C C2 DE 12           5713 	jp	nz,00122$
+   126F 18 03              5714 	jr	00180$
+   1271                    5715 00179$:
+   1271 C3 DE 12           5716 	jp	00122$
+   1274                    5717 00180$:
+                           5718 ;	square.c 964
+                           5719 ;	genCmpEq
+                           5720 ;	AOP_HL for _modus
+                           5721 ; genCmpEq: left 1, right 1, result 0
+   1274 21 38 01           5722 	ld	hl,#_modus
+   1277 7E                 5723 	ld	a,(hl)
+   1278 B7                 5724 	or	a,a
+   1279 C2 AE 12           5725 	jp	nz,00119$
+   127C 18 03              5726 	jr	00182$
+   127E                    5727 00181$:
+   127E C3 AE 12           5728 	jp	00119$
+   1281                    5729 00182$:
+                           5730 ;	square.c 966
+                           5731 ;	genAssign
+                           5732 ;	AOP_HL for _clkA
+   1281 21 25 01           5733 	ld	hl,#_clkA
+   1284 36 00              5734 	ld	(hl),#0x00
+                           5735 ;	square.c 967
+                           5736 ;	genAssign
+                           5737 ;	AOP_HL for _clkB
+   1286 21 28 01           5738 	ld	hl,#_clkB
+   1289 36 00              5739 	ld	(hl),#0x00
+                           5740 ;	square.c 968
+                           5741 ;	genAssign
+                           5742 ;	AOP_HL for _clkC
+   128B 21 2B 01           5743 	ld	hl,#_clkC
+   128E 36 00              5744 	ld	(hl),#0x00
+                           5745 ;	square.c 969
+                           5746 ;	genAssign
+                           5747 ;	AOP_HL for _modus
+   1290 21 38 01           5748 	ld	hl,#_modus
+   1293 36 01              5749 	ld	(hl),#0x01
+                           5750 ;	square.c 970
+                           5751 ;	genIpush
+                           5752 ; _saveRegsForCall: sendSetSize: 0 deInUse: 0 bcInUse: 0 deSending: 0
+   1295 21 03 06           5753 	ld	hl,#0x0603
+   1298 E5                 5754 	push	hl
+                           5755 ;	genCall
+   1299 CD 00 00           5756 	call	_set_sprite_tile
+   129C E8 02              5757 	lda	sp,2(sp)
+                           5758 ;	square.c 971
+                           5759 ;	genIpush
+                           5760 ; _saveRegsForCall: sendSetSize: 0 deInUse: 0 bcInUse: 0 deSending: 0
+   129E 21 A0 10           5761 	ld	hl,#0x10A0
+   12A1 E5                 5762 	push	hl
+                           5763 ;	genIpush
+   12A2 3E 03              5764 	ld	a,#0x03
+   12A4 F5                 5765 	push	af
+   12A5 33                 5766 	inc	sp
+                           5767 ;	genCall
+   12A6 CD 00 00           5768 	call	_move_sprite
+   12A9 E8 03              5769 	lda	sp,3(sp)
+                           5770 ;	genGoto
+   12AB C3 D8 12           5771 	jp	00120$
+                           5772 ;	genLabel
+   12AE                    5773 00119$:
+                           5774 ;	square.c 975
+                           5775 ;	genAssign
+                           5776 ;	AOP_HL for _clkA
+   12AE 21 25 01           5777 	ld	hl,#_clkA
+   12B1 36 00              5778 	ld	(hl),#0x00
+                           5779 ;	square.c 976
+                           5780 ;	genAssign
+                           5781 ;	AOP_HL for _clkB
+   12B3 21 28 01           5782 	ld	hl,#_clkB
+   12B6 36 00              5783 	ld	(hl),#0x00
+                           5784 ;	square.c 977
+                           5785 ;	genAssign
+                           5786 ;	AOP_HL for _clkC
+   12B8 21 2B 01           5787 	ld	hl,#_clkC
+   12BB 36 00              5788 	ld	(hl),#0x00
+                           5789 ;	square.c 978
+                           5790 ;	genAssign
+                           5791 ;	AOP_HL for _modus
+   12BD 21 38 01           5792 	ld	hl,#_modus
+   12C0 36 00              5793 	ld	(hl),#0x00
+                           5794 ;	square.c 979
+                           5795 ;	genIpush
+                           5796 ; _saveRegsForCall: sendSetSize: 0 deInUse: 0 bcInUse: 0 deSending: 0
+   12C2 21 03 06           5797 	ld	hl,#0x0603
+   12C5 E5                 5798 	push	hl
+                           5799 ;	genCall
+   12C6 CD 00 00           5800 	call	_set_sprite_tile
+   12C9 E8 02              5801 	lda	sp,2(sp)
+                           5802 ;	square.c 980
+                           5803 ;	genIpush
                            5804 ; _saveRegsForCall: sendSetSize: 0 deInUse: 0 bcInUse: 0 deSending: 0
-   12C6 CD 00 00           5805 	call	_joypad
-   12C9 4B                 5806 	ld	c,e
-                           5807 ;	genCmpEq
-                           5808 ; genCmpEq: left 1, right 1, result 0
-   12CA 79                 5809 	ld	a,c
-   12CB FE 08              5810 	cp	a,#0x08
-   12CD C2 E5 12           5811 	jp	nz,00124$
-   12D0 18 03              5812 	jr	00194$
-   12D2                    5813 00193$:
-   12D2 C3 E5 12           5814 	jp	00124$
-   12D5                    5815 00194$:
-                           5816 ;	genCmpEq
-                           5817 ;	AOP_HL for _tempo
-                           5818 ; genCmpEq: left 1, right 1, result 0
-   12D5 21 33 01           5819 	ld	hl,#_tempo
-   12D8 7E                 5820 	ld	a,(hl)
-   12D9 FE 01              5821 	cp	a,#0x01
-   12DB CA E5 12           5822 	jp	z,00124$
-   12DE                    5823 00195$:
-                           5824 ;	square.c 990
-                           5825 ;	genMinus
-                           5826 ;	AOP_HL for _tempo
-   12DE 21 33 01           5827 	ld	hl,#_tempo
-   12E1 35                 5828 	dec	(hl)
-                           5829 ;	square.c 992
-                           5830 ;	genCall
-                           5831 ; _saveRegsForCall: sendSetSize: 0 deInUse: 0 bcInUse: 0 deSending: 0
-   12E2 CD 00 00           5832 	call	_waitpadup
-                           5833 ;	genLabel
-   12E5                    5834 00124$:
-                           5835 ;	square.c 997
-                           5836 ;	genCall
-                           5837 ; _saveRegsForCall: sendSetSize: 0 deInUse: 0 bcInUse: 0 deSending: 0
-   12E5 CD 00 00           5838 	call	_joypad
-   12E8 4B                 5839 	ld	c,e
-                           5840 ;	genCmpEq
-                           5841 ; genCmpEq: left 1, right 1, result 0
-   12E9 79                 5842 	ld	a,c
-   12EA FE 04              5843 	cp	a,#0x04
-   12EC C2 04 13           5844 	jp	nz,00127$
-   12EF 18 03              5845 	jr	00197$
-   12F1                    5846 00196$:
-   12F1 C3 04 13           5847 	jp	00127$
-   12F4                    5848 00197$:
-                           5849 ;	genCmpEq
-                           5850 ;	AOP_HL for _tempo
-                           5851 ; genCmpEq: left 1, right 1, result 0
-   12F4 21 33 01           5852 	ld	hl,#_tempo
-   12F7 7E                 5853 	ld	a,(hl)
-   12F8 FE 28              5854 	cp	a,#0x28
-   12FA CA 04 13           5855 	jp	z,00127$
-   12FD                    5856 00198$:
-                           5857 ;	square.c 999
-                           5858 ;	genPlus
-                           5859 ;	AOP_HL for _tempo
-                           5860 ;	genPlusIncr
-   12FD 21 33 01           5861 	ld	hl,#_tempo
-   1300 34                 5862 	inc	(hl)
-                           5863 ;	square.c 1001
-                           5864 ;	genCall
-                           5865 ; _saveRegsForCall: sendSetSize: 0 deInUse: 0 bcInUse: 0 deSending: 0
-   1301 CD 00 00           5866 	call	_waitpadup
-                           5867 ;	genLabel
-   1304                    5868 00127$:
-                           5869 ;	square.c 1005
-                           5870 ;	genCmpEq
-                           5871 ;	AOP_HL for _padext
-                           5872 ; genCmpEq: left 1, right 1, result 0
-   1304 21 39 01           5873 	ld	hl,#_padext
-   1307 7E                 5874 	ld	a,(hl)
-   1308 FE 21              5875 	cp	a,#0x21
-   130A C2 1E 13           5876 	jp	nz,00130$
-   130D 18 03              5877 	jr	00200$
-   130F                    5878 00199$:
-   130F C3 1E 13           5879 	jp	00130$
-   1312                    5880 00200$:
-                           5881 ;	square.c 1007
-                           5882 ;	genCall
-                           5883 ; _saveRegsForCall: sendSetSize: 0 deInUse: 0 bcInUse: 0 deSending: 0
-   1312 CD DC 07           5884 	call	_increaseSteps
-                           5885 ;	square.c 1008
-                           5886 ;	genIpush
-                           5887 ; _saveRegsForCall: sendSetSize: 0 deInUse: 0 bcInUse: 0 deSending: 0
-   1315 3E 05              5888 	ld	a,#0x05
-   1317 F5                 5889 	push	af
-   1318 33                 5890 	inc	sp
-                           5891 ;	genCall
-   1319 CD 00 00           5892 	call	_performantdelay
-   131C E8 01              5893 	lda	sp,1(sp)
-                           5894 ;	genLabel
-   131E                    5895 00130$:
-                           5896 ;	square.c 1011
-                           5897 ;	genCmpEq
-                           5898 ;	AOP_HL for _padext
-                           5899 ; genCmpEq: left 1, right 1, result 0
-   131E 21 39 01           5900 	ld	hl,#_padext
-   1321 7E                 5901 	ld	a,(hl)
-   1322 FE 22              5902 	cp	a,#0x22
-   1324 C2 38 13           5903 	jp	nz,00132$
-   1327 18 03              5904 	jr	00202$
-   1329                    5905 00201$:
-   1329 C3 38 13           5906 	jp	00132$
-   132C                    5907 00202$:
-                           5908 ;	square.c 1013
-                           5909 ;	genCall
-                           5910 ; _saveRegsForCall: sendSetSize: 0 deInUse: 0 bcInUse: 0 deSending: 0
-   132C CD C5 08           5911 	call	_decreaseSteps
-                           5912 ;	square.c 1014
-                           5913 ;	genIpush
-                           5914 ; _saveRegsForCall: sendSetSize: 0 deInUse: 0 bcInUse: 0 deSending: 0
-   132F 3E 05              5915 	ld	a,#0x05
-   1331 F5                 5916 	push	af
-   1332 33                 5917 	inc	sp
-                           5918 ;	genCall
-   1333 CD 00 00           5919 	call	_performantdelay
-   1336 E8 01              5920 	lda	sp,1(sp)
-                           5921 ;	genLabel
-   1338                    5922 00132$:
-                           5923 ;	square.c 1017
-                           5924 ;	genCmpEq
-                           5925 ;	AOP_HL for _padext
-                           5926 ; genCmpEq: left 1, right 1, result 0
-   1338 21 39 01           5927 	ld	hl,#_padext
-   133B 7E                 5928 	ld	a,(hl)
-   133C FE 24              5929 	cp	a,#0x24
-   133E C2 52 13           5930 	jp	nz,00134$
-   1341 18 03              5931 	jr	00204$
-   1343                    5932 00203$:
-   1343 C3 52 13           5933 	jp	00134$
-   1346                    5934 00204$:
-                           5935 ;	square.c 1019
-                           5936 ;	genCall
-                           5937 ; _saveRegsForCall: sendSetSize: 0 deInUse: 0 bcInUse: 0 deSending: 0
-   1346 CD AE 09           5938 	call	_increasePulses
-                           5939 ;	square.c 1020
-                           5940 ;	genIpush
-                           5941 ; _saveRegsForCall: sendSetSize: 0 deInUse: 0 bcInUse: 0 deSending: 0
-   1349 3E 05              5942 	ld	a,#0x05
-   134B F5                 5943 	push	af
-   134C 33                 5944 	inc	sp
-                           5945 ;	genCall
-   134D CD 00 00           5946 	call	_performantdelay
-   1350 E8 01              5947 	lda	sp,1(sp)
-                           5948 ;	genLabel
-   1352                    5949 00134$:
-                           5950 ;	square.c 1023
-                           5951 ;	genCmpEq
-                           5952 ;	AOP_HL for _padext
-                           5953 ; genCmpEq: left 1, right 1, result 0
-   1352 21 39 01           5954 	ld	hl,#_padext
-   1355 7E                 5955 	ld	a,(hl)
-   1356 FE 28              5956 	cp	a,#0x28
-   1358 C2 6C 13           5957 	jp	nz,00136$
-   135B 18 03              5958 	jr	00206$
-   135D                    5959 00205$:
-   135D C3 6C 13           5960 	jp	00136$
-   1360                    5961 00206$:
-                           5962 ;	square.c 1025
-                           5963 ;	genCall
-                           5964 ; _saveRegsForCall: sendSetSize: 0 deInUse: 0 bcInUse: 0 deSending: 0
-   1360 CD B3 0A           5965 	call	_decreasePulses
-                           5966 ;	square.c 1026
-                           5967 ;	genIpush
-                           5968 ; _saveRegsForCall: sendSetSize: 0 deInUse: 0 bcInUse: 0 deSending: 0
-   1363 3E 05              5969 	ld	a,#0x05
-   1365 F5                 5970 	push	af
-   1366 33                 5971 	inc	sp
-                           5972 ;	genCall
-   1367 CD 00 00           5973 	call	_performantdelay
-   136A E8 01              5974 	lda	sp,1(sp)
-                           5975 ;	genLabel
-   136C                    5976 00136$:
-                           5977 ;	square.c 1029
-                           5978 ;	genCmpEq
-                           5979 ;	AOP_HL for _padext
-                           5980 ; genCmpEq: left 1, right 1, result 0
-   136C 21 39 01           5981 	ld	hl,#_padext
-   136F 7E                 5982 	ld	a,(hl)
-   1370 FE 14              5983 	cp	a,#0x14
-   1372 C2 86 13           5984 	jp	nz,00138$
-   1375 18 03              5985 	jr	00208$
-   1377                    5986 00207$:
-   1377 C3 86 13           5987 	jp	00138$
-   137A                    5988 00208$:
-                           5989 ;	square.c 1031
-                           5990 ;	genCall
-                           5991 ; _saveRegsForCall: sendSetSize: 0 deInUse: 0 bcInUse: 0 deSending: 0
-   137A CD 89 06           5992 	call	_increaseOffStep
-                           5993 ;	square.c 1032
-                           5994 ;	genIpush
-                           5995 ; _saveRegsForCall: sendSetSize: 0 deInUse: 0 bcInUse: 0 deSending: 0
-   137D 3E 05              5996 	ld	a,#0x05
-   137F F5                 5997 	push	af
-   1380 33                 5998 	inc	sp
-                           5999 ;	genCall
-   1381 CD 00 00           6000 	call	_performantdelay
-   1384 E8 01              6001 	lda	sp,1(sp)
-                           6002 ;	genLabel
-   1386                    6003 00138$:
-                           6004 ;	square.c 1035
-                           6005 ;	genCmpEq
-                           6006 ;	AOP_HL for _padext
-                           6007 ; genCmpEq: left 1, right 1, result 0
-   1386 21 39 01           6008 	ld	hl,#_padext
-   1389 7E                 6009 	ld	a,(hl)
-   138A FE 18              6010 	cp	a,#0x18
-   138C C2 A0 13           6011 	jp	nz,00140$
-   138F 18 03              6012 	jr	00210$
-   1391                    6013 00209$:
-   1391 C3 A0 13           6014 	jp	00140$
-   1394                    6015 00210$:
-                           6016 ;	square.c 1037
-                           6017 ;	genCall
-                           6018 ; _saveRegsForCall: sendSetSize: 0 deInUse: 0 bcInUse: 0 deSending: 0
-   1394 CD 45 07           6019 	call	_decreaseOffStep
-                           6020 ;	square.c 1038
-                           6021 ;	genIpush
-                           6022 ; _saveRegsForCall: sendSetSize: 0 deInUse: 0 bcInUse: 0 deSending: 0
-   1397 3E 05              6023 	ld	a,#0x05
-   1399 F5                 6024 	push	af
-   139A 33                 6025 	inc	sp
-                           6026 ;	genCall
-   139B CD 00 00           6027 	call	_performantdelay
-   139E E8 01              6028 	lda	sp,1(sp)
-                           6029 ;	genLabel
-   13A0                    6030 00140$:
-                           6031 ;	square.c 1041
-                           6032 ;	genCmpEq
-                           6033 ;	AOP_HL for _padext
-                           6034 ; genCmpEq: left 1, right 1, result 0
-   13A0 21 39 01           6035 	ld	hl,#_padext
-   13A3 7E                 6036 	ld	a,(hl)
-   13A4 FE 11              6037 	cp	a,#0x11
-   13A6 C2 BA 13           6038 	jp	nz,00142$
-   13A9 18 03              6039 	jr	00212$
-   13AB                    6040 00211$:
-   13AB C3 BA 13           6041 	jp	00142$
-   13AE                    6042 00212$:
-                           6043 ;	square.c 1043
-                           6044 ;	genCall
-                           6045 ; _saveRegsForCall: sendSetSize: 0 deInUse: 0 bcInUse: 0 deSending: 0
-   13AE CD B8 0B           6046 	call	_increaseSwing
-                           6047 ;	square.c 1044
-                           6048 ;	genIpush
-                           6049 ; _saveRegsForCall: sendSetSize: 0 deInUse: 0 bcInUse: 0 deSending: 0
-   13B1 3E 05              6050 	ld	a,#0x05
-   13B3 F5                 6051 	push	af
-   13B4 33                 6052 	inc	sp
-                           6053 ;	genCall
-   13B5 CD 00 00           6054 	call	_performantdelay
-   13B8 E8 01              6055 	lda	sp,1(sp)
-                           6056 ;	genLabel
-   13BA                    6057 00142$:
-                           6058 ;	square.c 1047
-                           6059 ;	genCmpEq
-                           6060 ;	AOP_HL for _padext
-                           6061 ; genCmpEq: left 1, right 1, result 0
-   13BA 21 39 01           6062 	ld	hl,#_padext
-   13BD 7E                 6063 	ld	a,(hl)
-   13BE FE 12              6064 	cp	a,#0x12
-   13C0 C2 D4 13           6065 	jp	nz,00144$
-   13C3 18 03              6066 	jr	00214$
-   13C5                    6067 00213$:
-   13C5 C3 D4 13           6068 	jp	00144$
-   13C8                    6069 00214$:
-                           6070 ;	square.c 1049
-                           6071 ;	genCall
-                           6072 ; _saveRegsForCall: sendSetSize: 0 deInUse: 0 bcInUse: 0 deSending: 0
-   13C8 CD 48 0C           6073 	call	_decreaseSwing
-                           6074 ;	square.c 1050
-                           6075 ;	genIpush
-                           6076 ; _saveRegsForCall: sendSetSize: 0 deInUse: 0 bcInUse: 0 deSending: 0
-   13CB 3E 05              6077 	ld	a,#0x05
-   13CD F5                 6078 	push	af
-   13CE 33                 6079 	inc	sp
-                           6080 ;	genCall
-   13CF CD 00 00           6081 	call	_performantdelay
-   13D2 E8 01              6082 	lda	sp,1(sp)
-                           6083 ;	genLabel
-   13D4                    6084 00144$:
-                           6085 ;	square.c 1053
-                           6086 ;	genCmpEq
-                           6087 ;	AOP_HL for _padext
-                           6088 ; genCmpEq: left 1, right 1, result 0
-   13D4 21 39 01           6089 	ld	hl,#_padext
-   13D7 7E                 6090 	ld	a,(hl)
-   13D8 FE 30              6091 	cp	a,#0x30
-   13DA C2 0B 11           6092 	jp	nz,00148$
-   13DD 18 03              6093 	jr	00216$
-   13DF                    6094 00215$:
-   13DF C3 0B 11           6095 	jp	00148$
-   13E2                    6096 00216$:
-                           6097 ;	square.c 1055
-                           6098 ;	genAssign
-                           6099 ;	AOP_HL for _syncToDrum
-   13E2 21 21 01           6100 	ld	hl,#_syncToDrum
-   13E5 36 01              6101 	ld	(hl),#0x01
-                           6102 ;	square.c 1057
-                           6103 ;	genCall
-                           6104 ; _saveRegsForCall: sendSetSize: 0 deInUse: 0 bcInUse: 0 deSending: 0
-   13E7 CD 00 00           6105 	call	_waitpadup
-                           6106 ;	genGoto
-   13EA C3 0B 11           6107 	jp	00148$
-                           6108 ;	genLabel
-   13ED                    6109 00150$:
-                           6110 ;	genEndFunction
-   13ED E8 03              6111 	lda	sp,3(sp)
-   13EF C9                 6112 	ret
-   13F0                    6113 ___main_end:
-                           6114 	.area _CODE
+   12CB 21 00 00           5805 	ld	hl,#0x0000
+   12CE E5                 5806 	push	hl
+                           5807 ;	genIpush
+   12CF 3E 03              5808 	ld	a,#0x03
+   12D1 F5                 5809 	push	af
+   12D2 33                 5810 	inc	sp
+                           5811 ;	genCall
+   12D3 CD 00 00           5812 	call	_move_sprite
+   12D6 E8 03              5813 	lda	sp,3(sp)
+                           5814 ;	genLabel
+   12D8                    5815 00120$:
+                           5816 ;	square.c 984
+                           5817 ;	genCall
+                           5818 ; _saveRegsForCall: sendSetSize: 0 deInUse: 0 bcInUse: 0 deSending: 0
+   12D8 CD 00 00           5819 	call	_wait_vbl_done
+                           5820 ;	square.c 985
+                           5821 ;	genCall
+                           5822 ; _saveRegsForCall: sendSetSize: 0 deInUse: 0 bcInUse: 0 deSending: 0
+   12DB CD 00 00           5823 	call	_waitpadup
+                           5824 ;	genLabel
+   12DE                    5825 00122$:
+                           5826 ;	square.c 1005
+                           5827 ;	genCall
+                           5828 ; _saveRegsForCall: sendSetSize: 0 deInUse: 0 bcInUse: 0 deSending: 0
+   12DE CD 00 00           5829 	call	_joypad
+   12E1 4B                 5830 	ld	c,e
+                           5831 ;	genCmpEq
+                           5832 ; genCmpEq: left 1, right 1, result 0
+   12E2 79                 5833 	ld	a,c
+   12E3 FE 02              5834 	cp	a,#0x02
+   12E5 C2 F9 12           5835 	jp	nz,00124$
+   12E8 18 03              5836 	jr	00184$
+   12EA                    5837 00183$:
+   12EA C3 F9 12           5838 	jp	00124$
+   12ED                    5839 00184$:
+                           5840 ;	square.c 1007
+                           5841 ;	genCall
+                           5842 ; _saveRegsForCall: sendSetSize: 0 deInUse: 0 bcInUse: 0 deSending: 0
+   12ED CD B3 0A           5843 	call	_decreasePulses
+                           5844 ;	square.c 1008
+                           5845 ;	genIpush
+                           5846 ; _saveRegsForCall: sendSetSize: 0 deInUse: 0 bcInUse: 0 deSending: 0
+   12F0 3E 05              5847 	ld	a,#0x05
+   12F2 F5                 5848 	push	af
+   12F3 33                 5849 	inc	sp
+                           5850 ;	genCall
+   12F4 CD 00 00           5851 	call	_performantdelay
+   12F7 E8 01              5852 	lda	sp,1(sp)
+                           5853 ;	genLabel
+   12F9                    5854 00124$:
+                           5855 ;	square.c 1011
+                           5856 ;	genCall
+                           5857 ; _saveRegsForCall: sendSetSize: 0 deInUse: 0 bcInUse: 0 deSending: 0
+   12F9 CD 00 00           5858 	call	_joypad
+   12FC 4B                 5859 	ld	c,e
+                           5860 ;	genCmpEq
+                           5861 ; genCmpEq: left 1, right 1, result 0
+   12FD 79                 5862 	ld	a,c
+   12FE FE 01              5863 	cp	a,#0x01
+   1300 C2 14 13           5864 	jp	nz,00126$
+   1303 18 03              5865 	jr	00186$
+   1305                    5866 00185$:
+   1305 C3 14 13           5867 	jp	00126$
+   1308                    5868 00186$:
+                           5869 ;	square.c 1013
+                           5870 ;	genCall
+                           5871 ; _saveRegsForCall: sendSetSize: 0 deInUse: 0 bcInUse: 0 deSending: 0
+   1308 CD AE 09           5872 	call	_increasePulses
+                           5873 ;	square.c 1014
+                           5874 ;	genIpush
+                           5875 ; _saveRegsForCall: sendSetSize: 0 deInUse: 0 bcInUse: 0 deSending: 0
+   130B 3E 05              5876 	ld	a,#0x05
+   130D F5                 5877 	push	af
+   130E 33                 5878 	inc	sp
+                           5879 ;	genCall
+   130F CD 00 00           5880 	call	_performantdelay
+   1312 E8 01              5881 	lda	sp,1(sp)
+                           5882 ;	genLabel
+   1314                    5883 00126$:
+                           5884 ;	square.c 1017
+                           5885 ;	genCall
+                           5886 ; _saveRegsForCall: sendSetSize: 0 deInUse: 0 bcInUse: 0 deSending: 0
+   1314 CD 00 00           5887 	call	_joypad
+   1317 4B                 5888 	ld	c,e
+                           5889 ;	genCmpEq
+                           5890 ; genCmpEq: left 1, right 1, result 0
+   1318 79                 5891 	ld	a,c
+   1319 FE 08              5892 	cp	a,#0x08
+   131B C2 2F 13           5893 	jp	nz,00128$
+   131E 18 03              5894 	jr	00188$
+   1320                    5895 00187$:
+   1320 C3 2F 13           5896 	jp	00128$
+   1323                    5897 00188$:
+                           5898 ;	square.c 1019
+                           5899 ;	genCall
+                           5900 ; _saveRegsForCall: sendSetSize: 0 deInUse: 0 bcInUse: 0 deSending: 0
+   1323 CD C5 08           5901 	call	_decreaseSteps
+                           5902 ;	square.c 1020
+                           5903 ;	genIpush
+                           5904 ; _saveRegsForCall: sendSetSize: 0 deInUse: 0 bcInUse: 0 deSending: 0
+   1326 3E 05              5905 	ld	a,#0x05
+   1328 F5                 5906 	push	af
+   1329 33                 5907 	inc	sp
+                           5908 ;	genCall
+   132A CD 00 00           5909 	call	_performantdelay
+   132D E8 01              5910 	lda	sp,1(sp)
+                           5911 ;	genLabel
+   132F                    5912 00128$:
+                           5913 ;	square.c 1023
+                           5914 ;	genCall
+                           5915 ; _saveRegsForCall: sendSetSize: 0 deInUse: 0 bcInUse: 0 deSending: 0
+   132F CD 00 00           5916 	call	_joypad
+   1332 4B                 5917 	ld	c,e
+                           5918 ;	genCmpEq
+                           5919 ; genCmpEq: left 1, right 1, result 0
+   1333 79                 5920 	ld	a,c
+   1334 FE 04              5921 	cp	a,#0x04
+   1336 C2 4A 13           5922 	jp	nz,00130$
+   1339 18 03              5923 	jr	00190$
+   133B                    5924 00189$:
+   133B C3 4A 13           5925 	jp	00130$
+   133E                    5926 00190$:
+                           5927 ;	square.c 1025
+                           5928 ;	genCall
+                           5929 ; _saveRegsForCall: sendSetSize: 0 deInUse: 0 bcInUse: 0 deSending: 0
+   133E CD DC 07           5930 	call	_increaseSteps
+                           5931 ;	square.c 1026
+                           5932 ;	genIpush
+                           5933 ; _saveRegsForCall: sendSetSize: 0 deInUse: 0 bcInUse: 0 deSending: 0
+   1341 3E 05              5934 	ld	a,#0x05
+   1343 F5                 5935 	push	af
+   1344 33                 5936 	inc	sp
+                           5937 ;	genCall
+   1345 CD 00 00           5938 	call	_performantdelay
+   1348 E8 01              5939 	lda	sp,1(sp)
+                           5940 ;	genLabel
+   134A                    5941 00130$:
+                           5942 ;	square.c 1049
+                           5943 ;	genCmpEq
+                           5944 ;	AOP_HL for _padext
+                           5945 ; genCmpEq: left 1, right 1, result 0
+   134A 21 39 01           5946 	ld	hl,#_padext
+   134D 7E                 5947 	ld	a,(hl)
+   134E FE 14              5948 	cp	a,#0x14
+   1350 C2 64 13           5949 	jp	nz,00132$
+   1353 18 03              5950 	jr	00192$
+   1355                    5951 00191$:
+   1355 C3 64 13           5952 	jp	00132$
+   1358                    5953 00192$:
+                           5954 ;	square.c 1051
+                           5955 ;	genCall
+                           5956 ; _saveRegsForCall: sendSetSize: 0 deInUse: 0 bcInUse: 0 deSending: 0
+   1358 CD 89 06           5957 	call	_increaseOffStep
+                           5958 ;	square.c 1052
+                           5959 ;	genIpush
+                           5960 ; _saveRegsForCall: sendSetSize: 0 deInUse: 0 bcInUse: 0 deSending: 0
+   135B 3E 05              5961 	ld	a,#0x05
+   135D F5                 5962 	push	af
+   135E 33                 5963 	inc	sp
+                           5964 ;	genCall
+   135F CD 00 00           5965 	call	_performantdelay
+   1362 E8 01              5966 	lda	sp,1(sp)
+                           5967 ;	genLabel
+   1364                    5968 00132$:
+                           5969 ;	square.c 1055
+                           5970 ;	genCmpEq
+                           5971 ;	AOP_HL for _padext
+                           5972 ; genCmpEq: left 1, right 1, result 0
+   1364 21 39 01           5973 	ld	hl,#_padext
+   1367 7E                 5974 	ld	a,(hl)
+   1368 FE 18              5975 	cp	a,#0x18
+   136A C2 7E 13           5976 	jp	nz,00134$
+   136D 18 03              5977 	jr	00194$
+   136F                    5978 00193$:
+   136F C3 7E 13           5979 	jp	00134$
+   1372                    5980 00194$:
+                           5981 ;	square.c 1057
+                           5982 ;	genCall
+                           5983 ; _saveRegsForCall: sendSetSize: 0 deInUse: 0 bcInUse: 0 deSending: 0
+   1372 CD 45 07           5984 	call	_decreaseOffStep
+                           5985 ;	square.c 1058
+                           5986 ;	genIpush
+                           5987 ; _saveRegsForCall: sendSetSize: 0 deInUse: 0 bcInUse: 0 deSending: 0
+   1375 3E 05              5988 	ld	a,#0x05
+   1377 F5                 5989 	push	af
+   1378 33                 5990 	inc	sp
+                           5991 ;	genCall
+   1379 CD 00 00           5992 	call	_performantdelay
+   137C E8 01              5993 	lda	sp,1(sp)
+                           5994 ;	genLabel
+   137E                    5995 00134$:
+                           5996 ;	square.c 1061
+                           5997 ;	genCmpEq
+                           5998 ;	AOP_HL for _padext
+                           5999 ; genCmpEq: left 1, right 1, result 0
+   137E 21 39 01           6000 	ld	hl,#_padext
+   1381 7E                 6001 	ld	a,(hl)
+   1382 FE 11              6002 	cp	a,#0x11
+   1384 C2 98 13           6003 	jp	nz,00136$
+   1387 18 03              6004 	jr	00196$
+   1389                    6005 00195$:
+   1389 C3 98 13           6006 	jp	00136$
+   138C                    6007 00196$:
+                           6008 ;	square.c 1063
+                           6009 ;	genCall
+                           6010 ; _saveRegsForCall: sendSetSize: 0 deInUse: 0 bcInUse: 0 deSending: 0
+   138C CD B8 0B           6011 	call	_increaseSwing
+                           6012 ;	square.c 1064
+                           6013 ;	genIpush
+                           6014 ; _saveRegsForCall: sendSetSize: 0 deInUse: 0 bcInUse: 0 deSending: 0
+   138F 3E 05              6015 	ld	a,#0x05
+   1391 F5                 6016 	push	af
+   1392 33                 6017 	inc	sp
+                           6018 ;	genCall
+   1393 CD 00 00           6019 	call	_performantdelay
+   1396 E8 01              6020 	lda	sp,1(sp)
+                           6021 ;	genLabel
+   1398                    6022 00136$:
+                           6023 ;	square.c 1067
+                           6024 ;	genCmpEq
+                           6025 ;	AOP_HL for _padext
+                           6026 ; genCmpEq: left 1, right 1, result 0
+   1398 21 39 01           6027 	ld	hl,#_padext
+   139B 7E                 6028 	ld	a,(hl)
+   139C FE 12              6029 	cp	a,#0x12
+   139E C2 B2 13           6030 	jp	nz,00138$
+   13A1 18 03              6031 	jr	00198$
+   13A3                    6032 00197$:
+   13A3 C3 B2 13           6033 	jp	00138$
+   13A6                    6034 00198$:
+                           6035 ;	square.c 1069
+                           6036 ;	genCall
+                           6037 ; _saveRegsForCall: sendSetSize: 0 deInUse: 0 bcInUse: 0 deSending: 0
+   13A6 CD 48 0C           6038 	call	_decreaseSwing
+                           6039 ;	square.c 1070
+                           6040 ;	genIpush
+                           6041 ; _saveRegsForCall: sendSetSize: 0 deInUse: 0 bcInUse: 0 deSending: 0
+   13A9 3E 05              6042 	ld	a,#0x05
+   13AB F5                 6043 	push	af
+   13AC 33                 6044 	inc	sp
+                           6045 ;	genCall
+   13AD CD 00 00           6046 	call	_performantdelay
+   13B0 E8 01              6047 	lda	sp,1(sp)
+                           6048 ;	genLabel
+   13B2                    6049 00138$:
+                           6050 ;	square.c 1073
+                           6051 ;	genCmpEq
+                           6052 ;	AOP_HL for _padext
+                           6053 ; genCmpEq: left 1, right 1, result 0
+   13B2 21 39 01           6054 	ld	hl,#_padext
+   13B5 7E                 6055 	ld	a,(hl)
+   13B6 FE 30              6056 	cp	a,#0x30
+   13B8 C2 23 11           6057 	jp	nz,00142$
+   13BB 18 03              6058 	jr	00200$
+   13BD                    6059 00199$:
+   13BD C3 23 11           6060 	jp	00142$
+   13C0                    6061 00200$:
+                           6062 ;	square.c 1075
+                           6063 ;	genAssign
+                           6064 ;	AOP_HL for _syncToDrum
+   13C0 21 21 01           6065 	ld	hl,#_syncToDrum
+   13C3 36 01              6066 	ld	(hl),#0x01
+                           6067 ;	square.c 1077
+                           6068 ;	genCall
+                           6069 ; _saveRegsForCall: sendSetSize: 0 deInUse: 0 bcInUse: 0 deSending: 0
+   13C5 CD 00 00           6070 	call	_waitpadup
+                           6071 ;	genGoto
+   13C8 C3 23 11           6072 	jp	00142$
+                           6073 ;	genLabel
+   13CB                    6074 00144$:
+                           6075 ;	genEndFunction
+   13CB E8 03              6076 	lda	sp,3(sp)
+   13CD C9                 6077 	ret
+   13CE                    6078 ___main_end:
+                           6079 	.area _CODE
 ASxxxx Assembler V01.75  (GameBoy Z80-like CPU), page 1.
 
 Symbol Table
@@ -6153,7 +6118,7 @@ Symbol Table
   0 ___increaseSteps_start             07DC R
   0 ___increaseSwing_end               0C48 R
   0 ___increaseSwing_start             0BB8 R
-  0 ___main_end                        13F0 R
+  0 ___main_end                        13CE R
   0 ___main_start                      0E7E R
   0 ___makeASound_end                  007D R
   0 ___makeASound_start                0044 R
@@ -6277,7 +6242,7 @@ Symbol Table
 
 Area Table
 
-   0 _CODE                              size 13F0   flags 0
+   0 _CODE                              size 13CE   flags 0
    1 _DATA                              size  13D   flags 0
    2 _OVERLAY                           size    0   flags 0
    3 _ISEG                              size    0   flags 0

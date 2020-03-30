@@ -851,15 +851,15 @@ void main()
 	SPRITES_8x8;
     set_sprite_data(0, 2, squareA);
     set_sprite_tile(0, 0);
-    move_sprite(0, dYlut[numberOfPulsesA], dXlut[totalStepsA]); //16, 144
+    move_sprite(0, dYlut[numberOfPulsesA-1], dXlut[totalStepsA-1]); //16, 144
 	
     set_sprite_data(2, 4, squareB);
     set_sprite_tile(1, 2);
-    move_sprite(1, dYlut[numberOfPulsesB], dXlut[totalStepsB]); //16, 144
+    move_sprite(1, dYlut[numberOfPulsesB-1], dXlut[totalStepsB-1]); //16, 144
 	
     set_sprite_data(4, 6, squareC);
     set_sprite_tile(2, 4);
-    move_sprite(2, dYlut[numberOfPulsesC], dXlut[totalStepsC]); //16, 144
+    move_sprite(2, dYlut[numberOfPulsesC-1], dXlut[totalStepsC-1]); //16, 144
 	
     set_sprite_data(6, 8, midiC);
     set_sprite_tile(3, 6);
@@ -985,7 +985,7 @@ void main()
 			waitpadup();
         }
 		
-        if (joypad() == J_DOWN && tempo != 1 )
+       /* if (joypad() == J_DOWN && tempo != 1 )
         { 
         	tempo--;
 			//printf("Tempo: %d \n", tempo);
@@ -1000,30 +1000,50 @@ void main()
 			//printf("Tempo: %d \n", tempo);
 			waitpadup();
 			//updateUI();
+        }*/
+		
+		if (joypad() == J_LEFT)
+        { 
+			decreasePulses();
+			performantdelay(5);
+        }
+
+        if (joypad() == J_RIGHT)
+        { 
+			increasePulses();
+			performantdelay(5);
+        }
+		
+		if (joypad() == J_DOWN)
+        { 
+			decreaseSteps();
+			performantdelay(5);
+        }
+
+        if (joypad() == J_UP)
+        { 
+			increaseSteps();
+			performantdelay(5);
         }
 		
 		if ( padext == J_BRIGHT)
 		{
-			increaseSteps();
-			performantdelay(5);
+			//
 		}
 		
 		if ( padext == J_BLEFT)
 		{
-			decreaseSteps();
-			performantdelay(5);
+			//
 		}
 		
 		if ( padext == J_BUP)
 		{
-			increasePulses();
-			performantdelay(5);
+			//
 		}
 		
 		if ( padext == J_BDOWN)
 		{
-			decreasePulses();
-			performantdelay(5);
+			//
 		}
 		
 		if ( padext == J_AUP)
