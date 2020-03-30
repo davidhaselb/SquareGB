@@ -64,7 +64,7 @@ AREA _CODE
 		_increaseSwing	0E43
 		_decreaseSwing	0EB0
 		_tick	0F22
-		_slave	1059
+		_sync	1059
 		_master	1097
 		_player	10AC
 		_tim	10C3
@@ -364,7 +364,7 @@ MODULES
 	FILE /opt/gbdk/lib/small/asxxxx/gb/crt0.o
 		NAME Runtime
 	FILE square.o
-		NAME lcc558910
+		NAME lcc560010
 LIBRARIES
 	LIBRARY /opt/gbdk/lib/small/asxxxx/gbz80/gbz80.lib
 		MODULE crt0_rle.o

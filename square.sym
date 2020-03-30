@@ -39,7 +39,7 @@
 00:0E43 _increaseSwing
 00:0EB0 _decreaseSwing
 00:0F22 _tick
-00:1059 _slave
+00:1059 _sync
 00:1097 _master
 00:10AC _player
 00:10C3 _tim

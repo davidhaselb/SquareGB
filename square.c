@@ -669,7 +669,7 @@ void tick()
 	
 }
 
-void slave()
+void sync()
 {
 	bob = pop;
 	(*(UBYTE *)0xFF02) = 128;
@@ -703,7 +703,7 @@ void player()
 		master();
 	}
 	else
-		slave();
+		sync();
 }
 
 

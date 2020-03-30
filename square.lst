@@ -1,9 +1,9 @@
                               1 ;--------------------------------------------------------
                               2 ; File Created by SDCC : FreeWare ANSI-C Compiler
-                              3 ; Version 2.3.1 Mon Mar 30 10:52:32 2020
+                              3 ; Version 2.3.1 Mon Mar 30 10:55:50 2020
                               4 
                               5 ;--------------------------------------------------------
-                              6 	.module lcc558910
+                              6 	.module lcc560010
                               7 	
                               8 ;--------------------------------------------------------
                               9 ; Public variables in this module
@@ -12,7 +12,7 @@
                              12 	.globl _tim
                              13 	.globl _player
                              14 	.globl _master
-                             15 	.globl _slave
+                             15 	.globl _sync
                              16 	.globl _tick
                              17 	.globl _decreaseSwing
                              18 	.globl _increaseSwing
@@ -4314,10 +4314,10 @@
                            4299 ;	genLabel
                            4300 ;	genFunction
                            4301 ;	---------------------------------
-                           4302 ; Function slave
+                           4302 ; Function sync
                            4303 ; ---------------------------------
-   0E59                    4304 ___slave_start:
-   0E59                    4305 _slave:
+   0E59                    4304 ___sync_start:
+   0E59                    4305 _sync:
                            4306 	
                            4307 ;	square.c 674
                            4308 ;	genAssign
@@ -4388,7 +4388,7 @@
                            4373 ;	genEndFunction
                            4374 	
    0E96 C9                 4375 	ret
-   0E97                    4376 ___slave_end:
+   0E97                    4376 ___sync_end:
                            4377 ;	square.c 689
                            4378 ;	genLabel
                            4379 ;	genFunction
@@ -4459,7 +4459,7 @@
                            4444 ;	square.c 706
                            4445 ;	genCall
                            4446 ; _saveRegsForCall: sendSetSize: 0 deInUse: 0 bcInUse: 0 deSending: 0
-   0EBF CD 59 0E           4447 	call	_slave
+   0EBF CD 59 0E           4447 	call	_sync
                            4448 ;	genLabel
    0EC2                    4449 00104$:
                            4450 ;	genEndFunction
@@ -5319,8 +5319,8 @@ Symbol Table
   0 ___rand_start                      0000 R
   0 ___setupDrum_end                   0966 R
   0 ___setupDrum_start                 092A R
-  0 ___slave_end                       0E97 R
-  0 ___slave_start                     0E59 R
+  0 ___sync_end                        0E97 R
+  0 ___sync_start                      0E59 R
   0 ___tick_end                        0E59 R
   0 ___tick_start                      0D22 R
   0 ___tim_end                         0EC7 R
@@ -5417,7 +5417,7 @@ Symbol Table
   1 _seldrum                           000B GR
     _set_interrupts                    **** GX
   0 _setupDrum                         092A GR
-  0 _slave                             0E59 GR
+  0 _sync                              0E59 GR
   1 _syncToDrum                        001D GR
   1 _tempo                             0002 GR
   0 _tick                              0D22 GR
