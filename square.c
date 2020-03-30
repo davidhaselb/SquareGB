@@ -3,6 +3,8 @@ SQUARE GB - euclidean percussion sequencer for the Game Boy
 written by                                  
 (c) David Haselberger
 
+This code is not optimized. It is for study and experimentational use only. 
+
 WITH SPECIAL THANKS TO:
 Oliver Wittchow and Julian Rohrhuber for nanovoice sourcecode:
 https://swiki.hfbk-hamburg.de/MusicTechnology/uploads/132/nanovoice.c
