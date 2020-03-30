@@ -18,7 +18,7 @@ AREA .  .ABS.
 		l__GSINITTAIL	0001
 		l__GSINIT	001B
 		l__BSS	0087
-		l__DATA	008D
+		l__DATA	008B
 		l__HEADER	01EB
 		s__CODE	0200
 		l__HOME	04D7
@@ -32,12 +32,12 @@ AREA .  .ABS.
 		s__GSFINAL	300F
 		.OAM	C000
 		s__DATA	C0A0
-		s__BSS	C12D
-		s__HEAP	C1B4
-		s__BSEG	C1B4
-		s__ISEG	C1B4
-		s__XSEG	C1B4
-		s__OVERLAY	C1B4
+		s__BSS	C12B
+		s__HEAP	C1B2
+		s__BSEG	C1B2
+		s__ISEG	C1B2
+		s__XSEG	C1B2
+		s__OVERLAY	C1B2
 		.STACK	E000
 		.refresh_OAM	FF80
 AREA _CODE
@@ -258,7 +258,7 @@ AREA _GSFINAL
 AREA _DATA
 	RADIX HEX
 	BASE C0A0
-	SIZE 008D
+	SIZE 008B
 	ATTRIB REL CON
 	GLOBALS
 		_samp_freq	C0A1
@@ -306,66 +306,65 @@ AREA _DATA
 		_drumA	C0CB
 		_drumB	C0EB
 		_drumC	C10B
-		_seed	C12B
 AREA _BSS
 	RADIX HEX
-	BASE C12D
+	BASE C12B
 	SIZE 0087
 	ATTRIB REL CON
 	GLOBALS
-		__cpu	C12D
-		.mode	C12E
-		__io_out	C12F
-		__io_in	C130
-		__io_status	C131
-		.vbl_done	C132
-		__current_bank	C133
-		_sys_time	C134
-		.sys_time	C134
-		.int_0x40	C136
-		.int_0x48	C146
-		.int_0x50	C156
-		.int_0x58	C166
-		.int_0x60	C176
-		font_current	C189
-		font_first_free_tile	C18C
-		font_table	C18D
-		.curx	C19F
-		.cury	C1A0
-		.fg_colour	C1A1
-		.bg_colour	C1A2
+		__cpu	C12B
+		.mode	C12C
+		__io_out	C12D
+		__io_in	C12E
+		__io_status	C12F
+		.vbl_done	C130
+		__current_bank	C131
+		_sys_time	C132
+		.sys_time	C132
+		.int_0x40	C134
+		.int_0x48	C144
+		.int_0x50	C154
+		.int_0x58	C164
+		.int_0x60	C174
+		font_current	C187
+		font_first_free_tile	C18A
+		font_table	C18B
+		.curx	C19D
+		.cury	C19E
+		.fg_colour	C19F
+		.bg_colour	C1A0
 AREA _HEAP
 	RADIX HEX
-	BASE C1B4
+	BASE C1B2
 	SIZE 0000
 	ATTRIB REL CON
 	GLOBALS
-		_malloc_heap_start	C1B4
+		_malloc_heap_start	C1B2
 AREA _OVERLAY
 	RADIX HEX
-	BASE C1B4
+	BASE C1B2
 	SIZE 0000
 	ATTRIB REL CON
 AREA _ISEG
 	RADIX HEX
-	BASE C1B4
+	BASE C1B2
 	SIZE 0000
 	ATTRIB REL CON
 AREA _BSEG
 	RADIX HEX
-	BASE C1B4
+	BASE C1B2
 	SIZE 0000
 	ATTRIB REL CON
 AREA _XSEG
 	RADIX HEX
-	BASE C1B4
+	BASE C1B2
 	SIZE 0000
 	ATTRIB REL CON
 MODULES
 	FILE /opt/gbdk/lib/small/asxxxx/gb/crt0.o
 		NAME Runtime
 	FILE square.o
-		NAME lcc557330
+		NAME lcc558910
 LIBRARIES
 	LIBRARY /opt/gbdk/lib/small/asxxxx/gbz80/gbz80.lib
 		MODULE crt0_rle.o

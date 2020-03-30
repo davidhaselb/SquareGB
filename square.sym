@@ -12,12 +12,12 @@
 00:300F s__GSFINAL
 00:C000 .OAM
 00:C0A0 s__DATA
-00:C12D s__BSS
-00:C1B4 s__HEAP
-00:C1B4 s__BSEG
-00:C1B4 s__ISEG
-00:C1B4 s__XSEG
-00:C1B4 s__OVERLAY
+00:C12B s__BSS
+00:C1B2 s__HEAP
+00:C1B2 s__BSEG
+00:C1B2 s__ISEG
+00:C1B2 s__XSEG
+00:C1B2 s__OVERLAY
 00:E000 .STACK
 00:FF80 .refresh_OAM
 ; Area: _CODE
@@ -244,31 +244,30 @@
 00:C0CB _drumA
 00:C0EB _drumB
 00:C10B _drumC
-00:C12B _seed
 ; Area: _BSS
-00:C12D __cpu
-00:C12E .mode
-00:C12F __io_out
-00:C130 __io_in
-00:C131 __io_status
-00:C132 .vbl_done
-00:C133 __current_bank
-00:C134 _sys_time
-00:C134 .sys_time
-00:C136 .int_0x40
-00:C146 .int_0x48
-00:C156 .int_0x50
-00:C166 .int_0x58
-00:C176 .int_0x60
-00:C189 font_current
-00:C18C font_first_free_tile
-00:C18D font_table
-00:C19F .curx
-00:C1A0 .cury
-00:C1A1 .fg_colour
-00:C1A2 .bg_colour
+00:C12B __cpu
+00:C12C .mode
+00:C12D __io_out
+00:C12E __io_in
+00:C12F __io_status
+00:C130 .vbl_done
+00:C131 __current_bank
+00:C132 _sys_time
+00:C132 .sys_time
+00:C134 .int_0x40
+00:C144 .int_0x48
+00:C154 .int_0x50
+00:C164 .int_0x58
+00:C174 .int_0x60
+00:C187 font_current
+00:C18A font_first_free_tile
+00:C18B font_table
+00:C19D .curx
+00:C19E .cury
+00:C19F .fg_colour
+00:C1A0 .bg_colour
 ; Area: _HEAP
-00:C1B4 _malloc_heap_start
+00:C1B2 _malloc_heap_start
 ; Area: _OVERLAY
 ; Area: _ISEG
 ; Area: _BSEG
