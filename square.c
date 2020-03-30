@@ -1,5 +1,5 @@
 /*
-SQUARE GB - euclidean percussion sequencer for the Game Boy        
+SQUARE GB - euclidean percussion sequencer for the Gameboy        
 written by                                  
 (c) David Haselberger
 
