@@ -1,7 +1,7 @@
-AS = lcc -c
-CC = lcc -Wa-l -Wl-m -Wl-yt3 -Wl-yo4 -Wl-ya4
+CC	= lcc -Wa-l -Wl-m -Wl-j
 
 BINS	= square.gb \
+
 
 
 all:	$(BINS)
@@ -24,3 +24,4 @@ make.bat: Makefile
 
 clean:
 	rm -f *.o *.lst *.map *.gb *~ *.rel *.cdb *.ihx *.lnk *.sym *.asm
+	

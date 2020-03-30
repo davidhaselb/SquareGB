@@ -368,7 +368,7 @@ MODULES
 	FILE /opt/gbdk/lib/small/asxxxx/gb/crt0.o
 		NAME Runtime
 	FILE square.o
-		NAME lcc720980
+		NAME lcc722290
 LIBRARIES
 	LIBRARY /opt/gbdk/lib/small/asxxxx/gbz80/gbz80.lib
 		MODULE crt0_rle.o
@@ -392,12 +392,6 @@ USERBASEDEF
 	_CODE=0x0200
 	_DATA=0xC0A0
 	_CODE_1=0x4000
-	_CODE_2=0x4000
-	_CODE_3=0x4000
-	_DATA_0=0xA000
-	_DATA_1=0xA000
-	_DATA_2=0xA000
-	_DATA_3=0xA000
 USERGLOBALDEF
 	.OAM=0xC000
 	.STACK=0xE000
