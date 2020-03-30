@@ -958,6 +958,7 @@ void main()
 			//updateUI();	
 			//printf("Selected %d \n", seldrum);
 		}
+		
 
         if (joypad() == J_START)
         { 
@@ -1026,26 +1027,6 @@ void main()
 			performantdelay(5);
         }
 		
-		if ( padext == J_BRIGHT)
-		{
-			//
-		}
-		
-		if ( padext == J_BLEFT)
-		{
-			//
-		}
-		
-		if ( padext == J_BUP)
-		{
-			//
-		}
-		
-		if ( padext == J_BDOWN)
-		{
-			//
-		}
-		
 		if ( padext == J_AUP)
 		{
 			increaseOffStep();
@@ -1077,6 +1058,26 @@ void main()
 			waitpadup();
 			//updateUI();
 		}		
+		
+		if ( padext == J_BRIGHT)
+		{
+			//
+		}
+		
+		if ( padext == J_BLEFT)
+		{
+			//
+		}
+		
+		if ( padext == J_BUP)
+		{
+			//
+		}
+		
+		if ( padext == J_BDOWN)
+		{
+			//
+		}
 	}                                               
             
 }

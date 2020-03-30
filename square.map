@@ -23,13 +23,13 @@ AREA .  .ABS.
 		l__HOME	01D3
 		l__HEADER	01E1
 		s__CODE	0200
-		l__CODE	1518
-		s__HOME	1718
-		s__BASE	18EB
-		s__LIT	1A53
-		s__GSINIT	1A53
-		s__GSINITTAIL	1B4F
-		s__GSFINAL	1B50
+		l__CODE	1568
+		s__HOME	1768
+		s__BASE	193B
+		s__LIT	1AA3
+		s__GSINIT	1AA3
+		s__GSINITTAIL	1B9F
+		s__GSFINAL	1BA0
 		.OAM	C000
 		s__DATA	C0A0
 		s__BSS	C1DD
@@ -43,7 +43,7 @@ AREA .  .ABS.
 AREA _CODE
 	RADIX HEX
 	BASE 0200
-	SIZE 1518
+	SIZE 1568
 	ATTRIB REL CON
 	GLOBALS
 		_performantdelay	0200
@@ -69,38 +69,38 @@ AREA _CODE
 		_player	1063
 		_tim	107A
 		_main	107E
-		__mulschar_rrx_s	15CE
-		__mulschar_rrx_hds	15D5
-		__muluchar_rrx_s	15E1
-		__mulsint_rrx_s	15EE
-		__muluint_rrx_s	15EE
-		__mulsint_rrx_hds	15FA
-		__muluint_rrx_hds	15FA
-		__muluchar_rrx_hds	15FA
-		__divschar_rrx_s	1616
-		__divschar_rrx_hds	161D
-		__modschar_rrx_s	1624
-		__modschar_rrx_hds	162B
-		__divsint_rrx_s	1630
-		__divsint_rrx_hds	163C
-		__modsint_rrx_s	1644
-		__modsint_rrx_hds	1650
-		__divuchar_rrx_s	1656
-		__divuchar_rrx_hds	165D
-		__moduchar_rrx_s	1664
-		__moduchar_rrx_hds	166B
-		__divuint_rrx_s	1670
-		__divuint_rrx_hds	167C
-		__moduint_rrx_s	1684
-		__moduint_rrx_hds	1690
-		.mod8	1696
-		.div8	1696
-		.mod16	169E
-		.div16	169E
-		.modu8	16D8
-		.divu8	16D8
-		.modu16	16DB
-		.divu16	16DB
+		__mulschar_rrx_s	161E
+		__mulschar_rrx_hds	1625
+		__muluchar_rrx_s	1631
+		__mulsint_rrx_s	163E
+		__muluint_rrx_s	163E
+		__mulsint_rrx_hds	164A
+		__muluint_rrx_hds	164A
+		__muluchar_rrx_hds	164A
+		__divschar_rrx_s	1666
+		__divschar_rrx_hds	166D
+		__modschar_rrx_s	1674
+		__modschar_rrx_hds	167B
+		__divsint_rrx_s	1680
+		__divsint_rrx_hds	168C
+		__modsint_rrx_s	1694
+		__modsint_rrx_hds	16A0
+		__divuchar_rrx_s	16A6
+		__divuchar_rrx_hds	16AD
+		__moduchar_rrx_s	16B4
+		__moduchar_rrx_hds	16BB
+		__divuint_rrx_s	16C0
+		__divuint_rrx_hds	16CC
+		__moduint_rrx_s	16D4
+		__moduint_rrx_hds	16E0
+		.mod8	16E6
+		.div8	16E6
+		.mod16	16EE
+		.div16	16EE
+		.modu8	1728
+		.divu8	1728
+		.modu16	172B
+		.divu16	172B
 AREA _HEADER
 	RADIX HEX
 	BASE 0000
@@ -110,94 +110,94 @@ AREA _HEADER
 		_exit	01D2
 AREA _HOME
 	RADIX HEX
-	BASE 1718
+	BASE 1768
 	SIZE 01D3
 	ATTRIB REL CON
 	GLOBALS
-		.set_mode	1718
-		.remove_VBL	1728
-		.remove_LCD	172E
-		.remove_TIM	1734
-		.remove_SIO	173A
-		.remove_JOY	1740
-		.add_VBL	1746
-		.add_LCD	174C
-		.add_TIM	1752
-		.add_SIO	1758
-		.add_JOY	175E
-		.remove_int	1764
-		.add_int	1784
-		.wait_vbl_done	17A0
-		_wait_vbl_done	17A0
-		_display_off	17B7
-		.display_off	17B7
-		.serial_IO	17D8
-		_mode	1807
-		_get_mode	1810
-		_enable_interrupts	1815
-		_disable_interrupts	1817
-		_reset	1819
-		.reset	1819
-		_set_interrupts	181F
-		_remove_VBL	182A
-		_remove_LCD	1835
-		_remove_TIM	1840
-		_remove_SIO	184B
-		_remove_JOY	1856
-		_add_VBL	1861
-		_add_LCD	186C
-		_add_TIM	1877
-		_add_SIO	1882
-		_add_JOY	188D
-		_clock	1898
-		__printTStates	18A1
-		banked_call	18A2
-		banked_ret	18BB
-		__initrleblock	18C4
+		.set_mode	1768
+		.remove_VBL	1778
+		.remove_LCD	177E
+		.remove_TIM	1784
+		.remove_SIO	178A
+		.remove_JOY	1790
+		.add_VBL	1796
+		.add_LCD	179C
+		.add_TIM	17A2
+		.add_SIO	17A8
+		.add_JOY	17AE
+		.remove_int	17B4
+		.add_int	17D4
+		.wait_vbl_done	17F0
+		_wait_vbl_done	17F0
+		_display_off	1807
+		.display_off	1807
+		.serial_IO	1828
+		_mode	1857
+		_get_mode	1860
+		_enable_interrupts	1865
+		_disable_interrupts	1867
+		_reset	1869
+		.reset	1869
+		_set_interrupts	186F
+		_remove_VBL	187A
+		_remove_LCD	1885
+		_remove_TIM	1890
+		_remove_SIO	189B
+		_remove_JOY	18A6
+		_add_VBL	18B1
+		_add_LCD	18BC
+		_add_TIM	18C7
+		_add_SIO	18D2
+		_add_JOY	18DD
+		_clock	18E8
+		__printTStates	18F1
+		banked_call	18F2
+		banked_ret	190B
+		__initrleblock	1914
 AREA _BASE
 	RADIX HEX
-	BASE 18EB
+	BASE 193B
 	SIZE 0168
 	ATTRIB REL CON
 	GLOBALS
-		.mv_sprite	18EB
-		_move_sprite	18FA
-		_set_win_data	1907
-		_set_bkg_data	1907
-		_set_sprite_data	1954
-		.padup	1983
-		_waitpadup	1983
-		.jpad	1993
-		.wait_pad	19C0
-		_joypad	19C7
-		_waitpad	19CC
-		.set_sprite_tile	19D6
-		_set_sprite_tile	19E3
-		.delay	19EE
-		_delay	1A28
-		.copy_vram	1A31
-		_get_data	1A40
-		_set_data	1A40
+		.mv_sprite	193B
+		_move_sprite	194A
+		_set_win_data	1957
+		_set_bkg_data	1957
+		_set_sprite_data	19A4
+		.padup	19D3
+		_waitpadup	19D3
+		.jpad	19E3
+		.wait_pad	1A10
+		_joypad	1A17
+		_waitpad	1A1C
+		.set_sprite_tile	1A26
+		_set_sprite_tile	1A33
+		.delay	1A3E
+		_delay	1A78
+		.copy_vram	1A81
+		_get_data	1A90
+		_set_data	1A90
 AREA _LIT
 	RADIX HEX
-	BASE 1A53
+	BASE 1AA3
 	SIZE 0000
 	ATTRIB REL CON
 AREA _GSINIT
 	RADIX HEX
-	BASE 1A53
+	BASE 1AA3
 	SIZE 00FC
 	ATTRIB REL CON
 	GLOBALS
-		gsinit	1A53
+		gsinit	1AA3
 AREA _GSINITTAIL
 	RADIX HEX
-	BASE 1B4F
+	BASE 1B9F
 	SIZE 0001
 	ATTRIB REL CON
 AREA _GSFINAL
 	RADIX HEX
-	BASE 1B50
+	BASE 1BA0
 	SIZE 0000
 	ATTRIB REL CON
 AREA _DATA
@@ -313,7 +313,7 @@ MODULES
 	FILE /opt/gbdk/lib/small/asxxxx/gb/crt0.o
 		NAME Runtime
 	FILE square.o
-		NAME lcc619280
+		NAME lcc620620
 LIBRARIES
 	LIBRARY /opt/gbdk/lib/small/asxxxx/gbz80/gbz80.lib
 		MODULE crt0_rle.o
