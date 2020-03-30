@@ -847,6 +847,27 @@ loadA()
     move_sprite(1, dYlut[numberOfPulsesB-1], dXlut[totalStepsB-1]); //16, 144
     set_sprite_tile(2, 4);
     move_sprite(2, dYlut[numberOfPulsesC-1], dXlut[totalStepsC-1]); //16, 144
+	cDelay = 0;
+	cOffStep = 0;
+	switch(seldrum)
+	{
+		case DRUMA:
+			cDelay = delayA;
+			cOffStep = offStepA;
+			break;
+		case DRUMB:
+			cDelay = delayB;
+			cOffStep = offStepB;
+			break;
+		case DRUMC:
+			cDelay = delayC;
+			cOffStep = offStepC;
+			break;
+	}
+    set_sprite_tile(5, 10);
+    move_sprite(5, cDelay+8, 152);
+    set_sprite_tile(4, 8);
+    move_sprite(4, 8, dXlut[cOffStep]);
 	disable_interrupts();
 	fillDrumA();
 	fillDrumB();
@@ -878,6 +899,27 @@ loadB()
     move_sprite(1, dYlut[numberOfPulsesB-1], dXlut[totalStepsB-1]); //16, 144
     set_sprite_tile(2, 4);
     move_sprite(2, dYlut[numberOfPulsesC-1], dXlut[totalStepsC-1]); //16, 144
+	cDelay = 0;
+	cOffStep = 0;
+	switch(seldrum)
+	{
+		case DRUMA:
+			cDelay = delayA;
+			cOffStep = offStepA;
+			break;
+		case DRUMB:
+			cDelay = delayB;
+			cOffStep = offStepB;
+			break;
+		case DRUMC:
+			cDelay = delayC;
+			cOffStep = offStepC;
+			break;
+	}
+    set_sprite_tile(5, 10);
+    move_sprite(5, cDelay+8, 152);
+    set_sprite_tile(4, 8);
+    move_sprite(4, 8, dXlut[cOffStep]);
 	disable_interrupts();
 	fillDrumA();
 	fillDrumB();
@@ -909,6 +951,27 @@ loadC()
     move_sprite(1, dYlut[numberOfPulsesB-1], dXlut[totalStepsB-1]); //16, 144
     set_sprite_tile(2, 4);
     move_sprite(2, dYlut[numberOfPulsesC-1], dXlut[totalStepsC-1]); //16, 144
+	cDelay = 0;
+	cOffStep = 0;
+	switch(seldrum)
+	{
+		case DRUMA:
+			cDelay = delayA;
+			cOffStep = offStepA;
+			break;
+		case DRUMB:
+			cDelay = delayB;
+			cOffStep = offStepB;
+			break;
+		case DRUMC:
+			cDelay = delayC;
+			cOffStep = offStepC;
+			break;
+	}
+    set_sprite_tile(5, 10);
+    move_sprite(5, cDelay+8, 152);
+    set_sprite_tile(4, 8);
+    move_sprite(4, 8, dXlut[cOffStep]);
 	disable_interrupts();
 	fillDrumA();
 	fillDrumB();
@@ -940,6 +1003,27 @@ loadD()
     move_sprite(1, dYlut[numberOfPulsesB-1], dXlut[totalStepsB-1]); //16, 144
     set_sprite_tile(2, 4);
     move_sprite(2, dYlut[numberOfPulsesC-1], dXlut[totalStepsC-1]); //16, 144
+	cDelay = 0;
+	cOffStep = 0;
+	switch(seldrum)
+	{
+		case DRUMA:
+			cDelay = delayA;
+			cOffStep = offStepA;
+			break;
+		case DRUMB:
+			cDelay = delayB;
+			cOffStep = offStepB;
+			break;
+		case DRUMC:
+			cDelay = delayC;
+			cOffStep = offStepC;
+			break;
+	}
+    set_sprite_tile(5, 10);
+    move_sprite(5, cDelay+8, 152);
+    set_sprite_tile(4, 8);
+    move_sprite(4, 8, dXlut[cOffStep]);
 	disable_interrupts();
 	fillDrumA();
 	fillDrumB();
