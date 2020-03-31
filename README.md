@@ -1,7 +1,7 @@
 # squareGB
 An Euclidean Percussion Sequencer for the Gameboy 
 
-## Ultra Combos
+## COMBOS
 SELECT + UP     =     SELECT DRUM
 
 SELECT + DOWN   =     SELECT MODE (MASTER/SYNC)
