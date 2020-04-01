@@ -1,4 +1,4 @@
-# squareGB
+# SquareGB
 An Euclidean Percussion Sequencer for the Gameboy 
 
 ## COMBOS
