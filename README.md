@@ -23,4 +23,6 @@ B + RIGHT       =     SAVE TO SLOT
 B + LEFT        =     LOAD FROM SLOT
 
 
+[![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/T6T01KGCU)
+
 Game Boy is a registered trademark of Nintendo, Inc..
