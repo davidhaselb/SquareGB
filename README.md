@@ -22,3 +22,5 @@ B + RIGHT       =     SAVE TO SLOT
 
 B + LEFT        =     LOAD FROM SLOT
 
+
+Game Boy is a registered trademark of Nintendo, Inc..
