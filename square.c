@@ -3,7 +3,7 @@ SQUARE GB - euclidean percussion sequencer for the Gameboy
 written by                                  
 (c) David Haselberger
 
-This code is not optimized. It is for study and experimentational use only. 
+This code is not optimized. It is for study and experimental use only. 
 
 Written with GBDK: 
 http://gbdk.sourceforge.net
