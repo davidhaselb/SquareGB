@@ -99,6 +99,7 @@ unsigned char saveC[] =
 };
 
 
+
 UINT8 drumA[32] = {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
 UINT8 drumB[32] = {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
 UINT8 drumC[32] = {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
@@ -136,7 +137,7 @@ void makeASound()
     NR12_REG = 0xF1U;
     NR13_REG = 0x6FU;
     NR14_REG = 0xC4U;
-    NR51_REG |= 0xFF;
+   // NR51_REG |= 0xFF;
 }
 
 void makeBSound()
@@ -145,7 +146,7 @@ void makeBSound()
     NR22_REG = 0x15U;
     NR23_REG = 0x27U;
     NR24_REG = 0xC7U;
-    NR51_REG |= 0xFF;
+    //NR51_REG |= 0xFF;
 }
 
 void makeCSound()
@@ -154,7 +155,7 @@ void makeCSound()
     NR42_REG = 0x24U;
     NR43_REG = 0x31U;
     NR44_REG = 0xC0U;
-	NR51_REG |= 0xFF;
+	//NR51_REG |= 0xFF;
     //NR52_REG |= 0x80;
 }
 
@@ -1111,9 +1112,10 @@ void savePattern()
 
 void main()
 {
+    NR52_REG = 0x80;
     NR50_REG = 0xFF;
     NR51_REG = 0xFF;
-    NR52_REG = 0x80;
+    
 	watch = 0;
 	clkA = 0;
 	pop = 0;
