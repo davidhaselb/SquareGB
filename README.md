@@ -2,6 +2,7 @@
 An Euclidean Percussion Sequencer for the Gameboy 
 
 [SquareGB on Itch.io](https://soleil-alpin.itch.io/square)
+
 [SquareGB physical cartridge](https://ko-fi.com/s/1215f974ab)
 
 ## COMBOS
