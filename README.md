@@ -1,7 +1,7 @@
 # SquareGB
 An Euclidean Percussion Sequencer for the Gameboy 
 
-<iframe frameborder="0" src="https://itch.io/embed/1908933?linkback=true" width="552" height="167"><a href="https://soleil-alpin.itch.io/square">Square by soleil-alpin</a></iframe>
+("https://soleil-alpin.itch.io/square")[SquareGM on Itch.io]
 
 ## COMBOS
 SELECT + UP     =     SELECT DRUM
